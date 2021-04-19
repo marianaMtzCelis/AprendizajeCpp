@@ -145,7 +145,81 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1gi-lo-foj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2269" y="84"/>
+            <point key="canvasLocation" x="2649" y="82"/>
+        </scene>
+        <!--Condicionales View Controller-->
+        <scene sceneID="nzl-Nc-Sag">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="fct-3z-qm8" customClass="CondicionalesViewController" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zwF-IZ-UP1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Juego Condicionales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQ5-jK-oOh">
+                                <rect key="frame" x="108" y="91" width="159" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bc9-p0-hEG">
+                                <rect key="frame" x="172" y="167" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Fin"/>
+                                <connections>
+                                    <segue destination="Q9P-4o-uWs" kind="show" identifier="condicionalesFinSegue" id="3G0-fe-Vsd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7M2-VF-6TT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kg5-5w-hbN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fDP-dM-SqF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="1085"/>
+        </scene>
+        <!--Fin Condicionales View Controller-->
+        <scene sceneID="WWj-fw-c3r">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Q9P-4o-uWs" customClass="FinCondicionalesViewController" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OZv-cM-F5b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fin Juego Condicionales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvP-LY-TPH">
+                                <rect key="frame" x="94" y="106" width="186" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ema-a4-vLB">
+                                <rect key="frame" x="29" y="223" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Jugar de Nuevo"/>
+                                <connections>
+                                    <segue destination="fct-3z-qm8" kind="show" identifier="finCondicionalesSegue" id="KHa-Jz-vRV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esL-PS-UTq">
+                                <rect key="frame" x="207" y="223" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Volver al Menu"/>
+                                <connections>
+                                    <segue destination="Z6X-nd-iG6" kind="show" identifier="finCondicionalesMenuSegue" id="A1R-kh-rw6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jwe-2Z-9Xx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zZv-o3-hrT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FvY-Vo-a2D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1566" y="1084"/>
         </scene>
         <!--Frutas View Controller-->
         <scene sceneID="zXa-5g-GZ1">
@@ -178,7 +252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zoJ-iD-6Tp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2268" y="901"/>
+            <point key="canvasLocation" x="2649" y="901"/>
         </scene>
         <!--Fin Frutas View Controller-->
         <scene sceneID="zvb-Yb-giv">
@@ -219,7 +293,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Es-pQ-JA9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3097" y="901"/>
+            <point key="canvasLocation" x="3524" y="901"/>
         </scene>
         <!--Fin Ciclos View Controller-->
         <scene sceneID="r3o-sZ-2mV">
@@ -260,7 +334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jXA-c5-jKC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3097" y="83"/>
+            <point key="canvasLocation" x="3524" y="83"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="UwR-wZ-oke">
@@ -297,6 +371,9 @@
                                 <rect key="frame" x="47" y="345" width="104" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Condicionales"/>
+                                <connections>
+                                    <segue destination="fct-3z-qm8" kind="show" identifier="menuCondicionalesSegue" id="z2b-Av-uTU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYd-zo-T0k">
                                 <rect key="frame" x="174" y="345" width="143" height="149"/>
@@ -318,9 +395,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ogd-75-oUp"/>
-        <segue reference="MRU-mL-5tg"/>
-        <segue reference="BIW-dB-RFe"/>
+        <segue reference="A1R-kh-rw6"/>
+        <segue reference="QiR-jx-xTh"/>
+        <segue reference="KHa-Jz-vRV"/>
+        <segue reference="sDT-Cf-ovd"/>
         <segue reference="reF-H5-3J4"/>
     </inferredMetricsTieBreakers>
     <resources>

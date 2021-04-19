@@ -20,6 +20,8 @@
 		28CCE655262E38BD00EA2B5C /* FinCiclosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCE654262E38BD00EA2B5C /* FinCiclosViewController.swift */; };
 		28CCE658262E3ABB00EA2B5C /* FrutasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCE657262E3ABB00EA2B5C /* FrutasViewController.swift */; };
 		28CCE65B262E3B4200EA2B5C /* FinFrutasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCE65A262E3B4200EA2B5C /* FinFrutasViewController.swift */; };
+		28CCE65E262E3CED00EA2B5C /* CondicionalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCE65D262E3CED00EA2B5C /* CondicionalesViewController.swift */; };
+		28CCE661262E3CFA00EA2B5C /* FinCondicionalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCE660262E3CFA00EA2B5C /* FinCondicionalesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		28CCE654262E38BD00EA2B5C /* FinCiclosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinCiclosViewController.swift; sourceTree = "<group>"; };
 		28CCE657262E3ABB00EA2B5C /* FrutasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutasViewController.swift; sourceTree = "<group>"; };
 		28CCE65A262E3B4200EA2B5C /* FinFrutasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinFrutasViewController.swift; sourceTree = "<group>"; };
+		28CCE65D262E3CED00EA2B5C /* CondicionalesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CondicionalesViewController.swift; sourceTree = "<group>"; };
+		28CCE660262E3CFA00EA2B5C /* FinCondicionalesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinCondicionalesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 				28CCE634262E2BF300EA2B5C /* SceneDelegate.swift */,
 				28CCE636262E2BF300EA2B5C /* ViewController.swift */,
 				28CCE638262E2BF300EA2B5C /* Main.storyboard */,
+				28CCE65D262E3CED00EA2B5C /* CondicionalesViewController.swift */,
+				28CCE660262E3CFA00EA2B5C /* FinCondicionalesViewController.swift */,
 				28CCE65A262E3B4200EA2B5C /* FinFrutasViewController.swift */,
 				28CCE657262E3ABB00EA2B5C /* FrutasViewController.swift */,
 				28CCE654262E38BD00EA2B5C /* FinCiclosViewController.swift */,
@@ -158,7 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28CCE65E262E3CED00EA2B5C /* CondicionalesViewController.swift in Sources */,
 				28CCE637262E2BF300EA2B5C /* ViewController.swift in Sources */,
+				28CCE661262E3CFA00EA2B5C /* FinCondicionalesViewController.swift in Sources */,
 				28CCE655262E38BD00EA2B5C /* FinCiclosViewController.swift in Sources */,
 				28CCE633262E2BF300EA2B5C /* AppDelegate.swift in Sources */,
 				28CCE635262E2BF300EA2B5C /* SceneDelegate.swift in Sources */,

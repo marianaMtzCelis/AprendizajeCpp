@@ -30,6 +30,11 @@ class MenuViewController: UIViewController {
         } else if segue.identifier == "menuFrutasSegue" {
             
             let viewFrutas = segue.destination as! FrutasViewController
+            
+        } else if segue.identifier == "menuCondicionalesSegue" {
+            
+            let viewCondicionales = segue.destination as! CondicionalesViewController
+            
         }
         
     }
