@@ -1,5 +1,5 @@
 //
-//  MenuViewController.swift
+//  GlobosViewController.swift
 //  AprendizajeC++
 //
 //  Created by Mariana Martínez Celis González on 19/04/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MenuViewController: UIViewController {
+class GlobosViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +19,9 @@ class MenuViewController: UIViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "menuGlobosSegue" {
+        if segue.identifier == "globosFinSegue" {
             
-            let viewGlobos = segue.destination as! GlobosViewController
+            let viewFinGlobos = segue.destination as! FinGlobosViewController
             
         }
     }
