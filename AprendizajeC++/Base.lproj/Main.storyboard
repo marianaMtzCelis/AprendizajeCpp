@@ -114,6 +114,80 @@
             </objects>
             <point key="canvasLocation" x="1565.5999999999999" y="-642.72863568215894"/>
         </scene>
+        <!--Ciclos View Controller-->
+        <scene sceneID="A5l-cR-Q8G">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="mLS-Hc-gVQ" customClass="CiclosViewController" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iYr-jF-BWO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Juego Ciclos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orK-V4-wwa">
+                                <rect key="frame" x="151" y="98" width="98" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxv-9p-r1U">
+                                <rect key="frame" x="172" y="184" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Fin"/>
+                                <connections>
+                                    <segue destination="aLl-Ej-j7f" kind="show" identifier="ciclosFinSegue" id="zC6-Iq-W3S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zKJ-m4-ufA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bLz-lb-igD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1gi-lo-foj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2269" y="84"/>
+        </scene>
+        <!--Fin Ciclos View Controller-->
+        <scene sceneID="r3o-sZ-2mV">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="aLl-Ej-j7f" customClass="FinCiclosViewController" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Ct-r4-2SQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fin Juego Ciclos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIa-HU-sq4">
+                                <rect key="frame" x="121" y="95" width="125" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5T-pC-x53">
+                                <rect key="frame" x="59" y="247" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Jugar de Nuevo"/>
+                                <connections>
+                                    <segue destination="mLS-Hc-gVQ" kind="show" identifier="volverCiclosSegue" id="BIW-dB-RFe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iST-wU-4Pz">
+                                <rect key="frame" x="219" y="247" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Volver al Menu"/>
+                                <connections>
+                                    <segue destination="Z6X-nd-iG6" kind="show" identifier="finGlobosMeuSegue" id="A6R-r9-EIH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gdi-Lc-sE4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="poN-1g-74y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jXA-c5-jKC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3097" y="83"/>
+        </scene>
         <!--Menu View Controller-->
         <scene sceneID="UwR-wZ-oke">
             <objects>
@@ -141,6 +215,9 @@
                                 <rect key="frame" x="193" y="143" width="104" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Ciclos"/>
+                                <connections>
+                                    <segue destination="mLS-Hc-gVQ" kind="show" identifier="menuCiclosSegue" id="sDT-Cf-ovd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pip-Zy-LyR">
                                 <rect key="frame" x="47" y="345" width="104" height="149"/>
@@ -164,8 +241,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="NqQ-MN-cvp"/>
-        <segue reference="9r9-vy-Jsh"/>
+        <segue reference="A6R-r9-EIH"/>
+        <segue reference="BIW-dB-RFe"/>
+        <segue reference="reF-H5-3J4"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

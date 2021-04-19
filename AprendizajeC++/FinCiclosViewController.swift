@@ -1,5 +1,5 @@
 //
-//  MenuViewController.swift
+//  FinCiclosViewController.swift
 //  AprendizajeC++
 //
 //  Created by Mariana Martínez Celis González on 19/04/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MenuViewController: UIViewController {
+class FinCiclosViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,13 +19,14 @@ class MenuViewController: UIViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "menuGlobosSegue" {
-            
-            let viewGlobos = segue.destination as! GlobosViewController
-            
-        } else if segue.identifier == "menuCiclosSegue" {
+        if segue.identifier == "volverCiclosSegue" {
             
             let viewCiclos = segue.destination as! CiclosViewController
+            
+        } else if segue.identifier == "finGlobosMeuSegue" {
+            
+            let viewMenu = segue.destination as! MenuViewController
+
         }
     }
 

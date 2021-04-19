@@ -16,6 +16,8 @@
 		28CCE649262E32A600EA2B5C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCE648262E32A600EA2B5C /* MenuViewController.swift */; };
 		28CCE64C262E351400EA2B5C /* GlobosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCE64B262E351400EA2B5C /* GlobosViewController.swift */; };
 		28CCE64F262E359900EA2B5C /* FinGlobosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCE64E262E359900EA2B5C /* FinGlobosViewController.swift */; };
+		28CCE652262E382F00EA2B5C /* CiclosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCE651262E382F00EA2B5C /* CiclosViewController.swift */; };
+		28CCE655262E38BD00EA2B5C /* FinCiclosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCE654262E38BD00EA2B5C /* FinCiclosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		28CCE648262E32A600EA2B5C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		28CCE64B262E351400EA2B5C /* GlobosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobosViewController.swift; sourceTree = "<group>"; };
 		28CCE64E262E359900EA2B5C /* FinGlobosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinGlobosViewController.swift; sourceTree = "<group>"; };
+		28CCE651262E382F00EA2B5C /* CiclosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiclosViewController.swift; sourceTree = "<group>"; };
+		28CCE654262E38BD00EA2B5C /* FinCiclosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinCiclosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				28CCE634262E2BF300EA2B5C /* SceneDelegate.swift */,
 				28CCE636262E2BF300EA2B5C /* ViewController.swift */,
 				28CCE638262E2BF300EA2B5C /* Main.storyboard */,
+				28CCE654262E38BD00EA2B5C /* FinCiclosViewController.swift */,
+				28CCE651262E382F00EA2B5C /* CiclosViewController.swift */,
 				28CCE64E262E359900EA2B5C /* FinGlobosViewController.swift */,
 				28CCE64B262E351400EA2B5C /* GlobosViewController.swift */,
 				28CCE648262E32A600EA2B5C /* MenuViewController.swift */,
@@ -147,11 +153,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				28CCE637262E2BF300EA2B5C /* ViewController.swift in Sources */,
+				28CCE655262E38BD00EA2B5C /* FinCiclosViewController.swift in Sources */,
 				28CCE633262E2BF300EA2B5C /* AppDelegate.swift in Sources */,
 				28CCE635262E2BF300EA2B5C /* SceneDelegate.swift in Sources */,
 				28CCE64C262E351400EA2B5C /* GlobosViewController.swift in Sources */,
 				28CCE64F262E359900EA2B5C /* FinGlobosViewController.swift in Sources */,
 				28CCE649262E32A600EA2B5C /* MenuViewController.swift in Sources */,
+				28CCE652262E382F00EA2B5C /* CiclosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
