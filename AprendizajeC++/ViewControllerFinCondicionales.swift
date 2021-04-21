@@ -1,13 +1,13 @@
 //
-//  FinCondicionalesViewController.swift
+//  ViewControllerFinCondicionales.swift
 //  AprendizajeC++
 //
-//  Created by Mariana Martínez Celis González on 19/04/21.
+//  Created by Mariana Martínez Celis González on 21/04/21.
 //
 
 import UIKit
 
-class FinCondicionalesViewController: UIViewController {
+class ViewControllerFinCondicionales: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +21,11 @@ class FinCondicionalesViewController: UIViewController {
         
         if segue.identifier == "volverCondicionalesSegue" {
             
-            let viewCondicionales = segue.destination as! CondicionalesViewController
+            let viewCondicionales = segue.destination as! ViewControllerCondicionales
             
         } else if segue.identifier == "finCondicionalesMenuSegue" {
             
-            let viewMenu = segue.destination as! MenuViewController
+            let viewMenu = segue.destination as! ViewControllerMenu
 
         }
     }

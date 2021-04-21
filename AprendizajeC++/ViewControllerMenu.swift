@@ -1,13 +1,13 @@
 //
-//  MenuViewController.swift
+//  ViewControllerMenu.swift
 //  AprendizajeC++
 //
-//  Created by Mariana Martínez Celis González on 19/04/21.
+//  Created by Mariana Martínez Celis González on 21/04/21.
 //
 
 import UIKit
 
-class MenuViewController: UIViewController {
+class ViewControllerMenu: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,19 +21,19 @@ class MenuViewController: UIViewController {
         
         if segue.identifier == "menuGlobosSegue" {
             
-            let viewGlobos = segue.destination as! GlobosViewController
+            let viewGlobos = segue.destination as! ViewControllerTiposDeDatos
             
         } else if segue.identifier == "menuCiclosSegue" {
             
-            let viewCiclos = segue.destination as! CiclosViewController
+            let viewCiclos = segue.destination as! ViewControllerCiclos
             
         } else if segue.identifier == "menuFrutasSegue" {
             
-            let viewFrutas = segue.destination as! FrutasViewController
+            let viewFrutas = segue.destination as! ViewControllerPalabrasReservadas
             
         } else if segue.identifier == "menuCondicionalesSegue" {
             
-            let viewCondicionales = segue.destination as! CondicionalesViewController
+            let viewCondicionales = segue.destination as! ViewControllerCondicionales
             
         }
         
