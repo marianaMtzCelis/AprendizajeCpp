@@ -1,0 +1,102 @@
+[
+    {
+        "tipo" : "double",
+        "nombre_imagen" : "double1"
+    },
+    {
+        "tipo" : "double",
+        "nombre_imagen" : "double2"
+    },
+    {
+        "tipo" : "double",
+        "nombre_imagen" : "double3"
+    },
+    {
+        "tipo" : "double",
+        "nombre_imagen" : "double4"
+    },
+    {
+        "tipo" : "double",
+        "nombre_imagen" : "double5"
+    },
+    {
+        "tipo" : "int",
+        "nombre_imagen" : "int1"
+    },
+    {
+        "tipo" : "int",
+        "nombre_imagen" : "int2"
+    },
+    {
+        "tipo" : "int",
+        "nombre_imagen" : "int3"
+    },
+    {
+        "tipo" : "int",
+        "nombre_imagen" : "int4"
+    },
+    {
+        "tipo" : "int",
+        "nombre_imagen" : "int5"
+    },
+    {
+        "tipo" : "string",
+        "nombre_imagen" : "string1"
+    },
+    {
+        "tipo" : "string",
+        "nombre_imagen" : "string2"
+    },
+    {
+        "tipo" : "string",
+        "nombre_imagen" : "string3"
+    },
+    {
+        "tipo" : "string",
+        "nombre_imagen" : "string4"
+    },
+    {
+        "tipo" : "string",
+        "nombre_imagen" : "string5"
+    },
+    {
+        "tipo" : "char",
+        "nombre_imagen" : "char1"
+    },
+    {
+        "tipo" : "char",
+        "nombre_imagen" : "char2"
+    },
+    {
+        "tipo" : "char",
+        "nombre_imagen" : "char3"
+    },
+    {
+        "tipo" : "char",
+        "nombre_imagen" : "char4"
+    },
+    {
+        "tipo" : "char",
+        "nombre_imagen" : "char5"
+    },
+    {
+        "tipo" : "bool",
+        "nombre_imagen" : "bool1"
+    },
+    {
+        "tipo" : "bool",
+        "nombre_imagen" : "bool2"
+    },
+    {
+        "tipo" : "bool",
+        "nombre_imagen" : "bool3"
+    },
+    {
+        "tipo" : "bool",
+        "nombre_imagen" : "bool4"
+    },
+    {
+        "tipo" : "bool",
+        "nombre_imagen" : "bool5"
+    }
+]
