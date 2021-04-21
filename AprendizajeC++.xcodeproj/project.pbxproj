@@ -26,6 +26,8 @@
 		28CCE63A262E2BF300EA2B5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CCE638262E2BF300EA2B5C /* Main.storyboard */; };
 		28CCE63C262E2BF400EA2B5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28CCE63B262E2BF400EA2B5C /* Assets.xcassets */; };
 		28CCE63F262E2BF400EA2B5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CCE63D262E2BF400EA2B5C /* LaunchScreen.storyboard */; };
+		5DA9F3902630E87E00CB4FEA /* tiposDeDatos.json in Resources */ = {isa = PBXBuildFile; fileRef = 5DA9F38F2630E87E00CB4FEA /* tiposDeDatos.json */; };
+		5DA9F3932630E88700CB4FEA /* listaValores.json in Resources */ = {isa = PBXBuildFile; fileRef = 5DA9F3922630E88700CB4FEA /* listaValores.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		28CCE63B262E2BF400EA2B5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28CCE63E262E2BF400EA2B5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28CCE640262E2BF400EA2B5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DA9F38F2630E87E00CB4FEA /* tiposDeDatos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = tiposDeDatos.json; path = ../../../Downloads/tiposDeDatos.json; sourceTree = "<group>"; };
+		5DA9F3922630E88700CB4FEA /* listaValores.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = listaValores.json; path = ../../../Downloads/listaValores.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +87,11 @@
 			isa = PBXGroup;
 			children = (
 				28CCE632262E2BF300EA2B5C /* AppDelegate.swift */,
+				5DA9F3922630E88700CB4FEA /* listaValores.json */,
 				28CCE634262E2BF300EA2B5C /* SceneDelegate.swift */,
 				28CCE638262E2BF300EA2B5C /* Main.storyboard */,
 				28CCE63B262E2BF400EA2B5C /* Assets.xcassets */,
+				5DA9F38F2630E87E00CB4FEA /* tiposDeDatos.json */,
 				28CCE63D262E2BF400EA2B5C /* LaunchScreen.storyboard */,
 				28CCE640262E2BF400EA2B5C /* Info.plist */,
 				280C38652630D39000F5E4BE /* ViewControllerBienvenida.swift */,
@@ -163,9 +169,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DA9F3902630E87E00CB4FEA /* tiposDeDatos.json in Resources */,
 				28CCE63F262E2BF400EA2B5C /* LaunchScreen.storyboard in Resources */,
 				28CCE63C262E2BF400EA2B5C /* Assets.xcassets in Resources */,
 				28CCE63A262E2BF300EA2B5C /* Main.storyboard in Resources */,
+				5DA9F3932630E88700CB4FEA /* listaValores.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
