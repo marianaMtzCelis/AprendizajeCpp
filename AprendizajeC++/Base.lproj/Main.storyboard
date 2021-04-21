@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller Bienvenida-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewControllerBienvenida" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="-47.200000000000003" y="249.62518740629687"/>
         </scene>
-        <!--Globos View Controller-->
+        <!--View Controller Tipos De Datos-->
         <scene sceneID="JON-gK-KiC">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="1Cd-os-3XH" customClass="GlobosViewController" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="1Cd-os-3XH" customClass="ViewControllerTiposDeDatos" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8FP-nx-Wg0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,10 +80,10 @@
             </objects>
             <point key="canvasLocation" x="826" y="-641"/>
         </scene>
-        <!--Fin Globos View Controller-->
+        <!--View Controller Fin Tipos De Datos-->
         <scene sceneID="51W-HC-TDG">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="uiJ-LB-4lf" customClass="FinGlobosViewController" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="uiJ-LB-4lf" customClass="ViewControllerFinTiposDeDatos" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Bs-0d-1bc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -162,10 +162,10 @@
             </objects>
             <point key="canvasLocation" x="1565.5999999999999" y="-642.72863568215894"/>
         </scene>
-        <!--Ciclos View Controller-->
+        <!--View Controller Ciclos-->
         <scene sceneID="A5l-cR-Q8G">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="mLS-Hc-gVQ" customClass="CiclosViewController" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="mLS-Hc-gVQ" customClass="ViewControllerCiclos" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iYr-jF-BWO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -195,10 +195,10 @@
             </objects>
             <point key="canvasLocation" x="2649" y="82"/>
         </scene>
-        <!--Condicionales View Controller-->
+        <!--View Controller Condicionales-->
         <scene sceneID="nzl-Nc-Sag">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="fct-3z-qm8" customClass="CondicionalesViewController" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="fct-3z-qm8" customClass="ViewControllerCondicionales" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zwF-IZ-UP1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -230,10 +230,10 @@
             </objects>
             <point key="canvasLocation" x="804" y="1085"/>
         </scene>
-        <!--Fin Condicionales View Controller-->
+        <!--View Controller Fin Condicionales-->
         <scene sceneID="WWj-fw-c3r">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Q9P-4o-uWs" customClass="FinCondicionalesViewController" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Q9P-4o-uWs" customClass="ViewControllerFinCondicionales" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OZv-cM-F5b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -312,10 +312,10 @@
             </objects>
             <point key="canvasLocation" x="1566" y="1084"/>
         </scene>
-        <!--Frutas View Controller-->
+        <!--View Controller Palabras Reservadas-->
         <scene sceneID="zXa-5g-GZ1">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="9O8-oI-3mZ" customClass="FrutasViewController" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="9O8-oI-3mZ" customClass="ViewControllerPalabrasReservadas" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t5A-SI-Czf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -345,10 +345,10 @@
             </objects>
             <point key="canvasLocation" x="2649" y="901"/>
         </scene>
-        <!--Fin Frutas View Controller-->
+        <!--View Controller Fin Palabras Reservadas-->
         <scene sceneID="zvb-Yb-giv">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="yqm-NB-HUF" customClass="FinFrutasViewController" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="yqm-NB-HUF" customClass="ViewControllerFinPalabrasReservadas" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e7o-nC-caO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -427,10 +427,10 @@
             </objects>
             <point key="canvasLocation" x="3524" y="901"/>
         </scene>
-        <!--Fin Ciclos View Controller-->
+        <!--View Controller Fin Ciclos-->
         <scene sceneID="r3o-sZ-2mV">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="aLl-Ej-j7f" customClass="FinCiclosViewController" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="aLl-Ej-j7f" customClass="ViewControllerFinCiclos" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Ct-r4-2SQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -509,10 +509,10 @@
             </objects>
             <point key="canvasLocation" x="3524" y="83"/>
         </scene>
-        <!--Menu View Controller-->
+        <!--View Controller Menu-->
         <scene sceneID="UwR-wZ-oke">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Z6X-nd-iG6" customClass="MenuViewController" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Z6X-nd-iG6" customClass="ViewControllerMenu" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eCI-hH-W0B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -565,7 +565,7 @@
         <segue reference="MRU-mL-5tg"/>
         <segue reference="KHa-Jz-vRV"/>
         <segue reference="BIW-dB-RFe"/>
-        <segue reference="reF-H5-3J4"/>
+        <segue reference="9r9-vy-Jsh"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="botonCiclos" width="444" height="864"/>

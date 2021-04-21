@@ -1,13 +1,13 @@
 //
-//  CondicionalesViewController.swift
+//  ViewControllerCiclos.swift
 //  AprendizajeC++
 //
-//  Created by Mariana Martínez Celis González on 19/04/21.
+//  Created by Mariana Martínez Celis González on 21/04/21.
 //
 
 import UIKit
 
-class CondicionalesViewController: UIViewController {
+class ViewControllerCiclos: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +19,9 @@ class CondicionalesViewController: UIViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "condicionalesFinSegue" {
+        if segue.identifier == "ciclosFinSegue" {
             
-            let viewFinCondicionales = segue.destination as! FinCondicionalesViewController
+            let viewFinCiclos = segue.destination as! ViewControllerFinCiclos
             
         }
     }
