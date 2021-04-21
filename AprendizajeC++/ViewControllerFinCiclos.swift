@@ -1,13 +1,13 @@
 //
-//  FinCiclosViewController.swift
+//  ViewControllerFinCiclos.swift
 //  AprendizajeC++
 //
-//  Created by Mariana Martínez Celis González on 19/04/21.
+//  Created by Mariana Martínez Celis González on 21/04/21.
 //
 
 import UIKit
 
-class FinCiclosViewController: UIViewController {
+class ViewControllerFinCiclos: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +21,11 @@ class FinCiclosViewController: UIViewController {
         
         if segue.identifier == "volverCiclosSegue" {
             
-            let viewCiclos = segue.destination as! CiclosViewController
+            let viewCiclos = segue.destination as! ViewControllerCiclos
             
         } else if segue.identifier == "finGlobosMeuSegue" {
             
-            let viewMenu = segue.destination as! MenuViewController
+            let viewMenu = segue.destination as! ViewControllerMenu
 
         }
     }

@@ -1,13 +1,13 @@
 //
-//  FinGlobosViewController.swift
+//  ViewControllerFinTiposDeDatos.swift
 //  AprendizajeC++
 //
-//  Created by Mariana Martínez Celis González on 19/04/21.
+//  Created by Mariana Martínez Celis González on 21/04/21.
 //
 
 import UIKit
 
-class FinGlobosViewController: UIViewController {
+class ViewControllerFinTiposDeDatos: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +21,11 @@ class FinGlobosViewController: UIViewController {
         
         if segue.identifier == "volverGlobosSegue" {
             
-            let viewGlobos = segue.destination as! GlobosViewController
+            let viewGlobos = segue.destination as! ViewControllerTiposDeDatos
             
         } else if segue.identifier == "finGlobosMenuSegue" {
             
-            let viewMenu = segue.destination as! MenuViewController
+            let viewMenu = segue.destination as! ViewControllerMenu
             
         }
     }

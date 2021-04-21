@@ -1,13 +1,13 @@
 //
-//  FrutasViewController.swift
+//  ViewControllerTiposDeDatos.swift
 //  AprendizajeC++
 //
-//  Created by Mariana Martínez Celis González on 19/04/21.
+//  Created by Mariana Martínez Celis González on 21/04/21.
 //
 
 import UIKit
 
-class FrutasViewController: UIViewController {
+class ViewControllerTiposDeDatos: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +19,9 @@ class FrutasViewController: UIViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "frutasFinSegue" {
+        if segue.identifier == "globosFinSegue" {
             
-            let viewFinFrutas = segue.destination as! FinFrutasViewController
+            let viewFinGlobos = segue.destination as! ViewControllerFinTiposDeDatos
             
         }
     }

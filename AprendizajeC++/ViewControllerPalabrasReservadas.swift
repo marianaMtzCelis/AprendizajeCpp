@@ -1,13 +1,13 @@
 //
-//  GlobosViewController.swift
+//  ViewControllerPalabrasReservadas.swift
 //  AprendizajeC++
 //
-//  Created by Mariana Martínez Celis González on 19/04/21.
+//  Created by Mariana Martínez Celis González on 21/04/21.
 //
 
 import UIKit
 
-class GlobosViewController: UIViewController {
+class ViewControllerPalabrasReservadas: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +19,9 @@ class GlobosViewController: UIViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "globosFinSegue" {
+        if segue.identifier == "frutasFinSegue" {
             
-            let viewFinGlobos = segue.destination as! FinGlobosViewController
+            let viewFinFrutas = segue.destination as! ViewControllerFinPalabrasReservadas
             
         }
     }

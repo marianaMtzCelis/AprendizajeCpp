@@ -1,13 +1,13 @@
 //
-//  FinFrutasViewController.swift
+//  ViewControllerFinPalabrasReservadas.swift
 //  AprendizajeC++
 //
-//  Created by Mariana Martínez Celis González on 19/04/21.
+//  Created by Mariana Martínez Celis González on 21/04/21.
 //
 
 import UIKit
 
-class FinFrutasViewController: UIViewController {
+class ViewControllerFinPalabrasReservadas: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +21,11 @@ class FinFrutasViewController: UIViewController {
         
         if segue.identifier == "volverFrutasSegue" {
             
-            let viewFrutas = segue.destination as! FrutasViewController
+            let viewFrutas = segue.destination as! ViewControllerPalabrasReservadas
             
         } else if segue.identifier == "finFrutasMenuSegue" {
             
-            let viewMenu = segue.destination as! MenuViewController
+            let viewMenu = segue.destination as! ViewControllerMenu
             
         }
     }
