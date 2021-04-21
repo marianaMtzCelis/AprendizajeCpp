@@ -352,64 +352,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGs-eX-QNK">
-                                <rect key="frame" x="166" y="64" width="43" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkQ-sf-ocH">
+                                <rect key="frame" x="20" y="16" width="162" height="314"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkQ-sf-ocH">
-                                <rect key="frame" x="47" y="143" width="104" height="149"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Tipos de Datos"/>
+                                <state key="normal" image="botonTipoDeDatos"/>
                                 <connections>
                                     <segue destination="1Cd-os-3XH" kind="show" identifier="menuGlobosSegue" id="reF-H5-3J4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uF0-fY-1d9">
-                                <rect key="frame" x="193" y="143" width="104" height="149"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uF0-fY-1d9">
+                                <rect key="frame" x="199" y="16" width="160" height="313"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Ciclos"/>
+                                <state key="normal" image="botonCiclos"/>
                                 <connections>
                                     <segue destination="mLS-Hc-gVQ" kind="show" identifier="menuCiclosSegue" id="sDT-Cf-ovd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pip-Zy-LyR">
-                                <rect key="frame" x="47" y="345" width="104" height="149"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pip-Zy-LyR">
+                                <rect key="frame" x="22" y="343" width="157" height="307"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Condicionales"/>
+                                <state key="normal" image="botonCondicionales"/>
                                 <connections>
                                     <segue destination="fct-3z-qm8" kind="show" identifier="menuCondicionalesSegue" id="z2b-Av-uTU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYd-zo-T0k">
-                                <rect key="frame" x="174" y="345" width="143" height="149"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYd-zo-T0k">
+                                <rect key="frame" x="199" y="343" width="157" height="306"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Palabras Reservadas"/>
+                                <state key="normal" image="botonPalabrasReservadas"/>
                                 <connections>
                                     <segue destination="9O8-oI-3mZ" kind="show" identifier="menuFrutasSegue" id="QiR-jx-xTh"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Y5m-6a-cmv"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.068996302780000004" green="0.13895529509999999" blue="0.2353050411" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="mZr-MX-ADG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jtJ-9w-86u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="804" y="250"/>
+            <point key="canvasLocation" x="804" y="249.62518740629687"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="gv3-36-17W"/>
         <segue reference="QiR-jx-xTh"/>
-        <segue reference="KHa-Jz-vRV"/>
+        <segue reference="z2b-Av-uTU"/>
         <segue reference="sDT-Cf-ovd"/>
         <segue reference="reF-H5-3J4"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="botonCiclos" width="444" height="864"/>
+        <image name="botonCondicionales" width="446" height="864"/>
+        <image name="botonPalabrasReservadas" width="446" height="864"/>
+        <image name="botonTipoDeDatos" width="450" height="866"/>
         <image name="carnivalGirl" width="1080" height="1080"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
