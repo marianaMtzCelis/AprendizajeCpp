@@ -12,7 +12,12 @@ class ViewControllerTiposDeDatos: UIViewController {
     var listaDatosGlobo : [DatosGlobo]!
     var listaTiposDeDatos : [String]!
     var timerJuego : Timer?
-
+    var tipoDeDatoPartida : String = ""
+    var puntos : Int = 0
+    
+    @IBOutlet weak var labelPuntos: UILabel!
+    @IBOutlet weak var tituloJuego: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,12 +41,16 @@ class ViewControllerTiposDeDatos: UIViewController {
             print("Error al cargar el archivo tiposDeDatos.json")
         }
         
+        tipoDeDatoPartida = listaTiposDeDatos.randomElement()!
+        
+        tituloJuego.text = tipoDeDatoPartida.uppercased()
+        
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTapBalloon)))
     }
     
     override func viewDidAppear(_ animated: Bool) {
         createBalloons()
-        timerJuego = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(createBalloons), userInfo: nil, repeats: true)
+        timerJuego = Timer.scheduledTimer(timeInterval: 4.2, target: self, selector: #selector(createBalloons), userInfo: nil, repeats: true)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -64,10 +73,11 @@ class ViewControllerTiposDeDatos: UIViewController {
     }
     
     fileprivate func animateBalloon(balloonImageView: UIImageView) {
-        let delay = Int.random(in: 0..<6)
+        let delay = Int.random(in: 0..<6000)
         
-        UIView.animate(withDuration: 10, delay: Double(delay), animations: {
-            balloonImageView.center.y = -50
+        // Arreglar : no desaparacen los globos, solo salen del frame
+        UIView.animate(withDuration: 10, delay: Double(delay) / 1000, animations: {
+            balloonImageView.center.y = -100
         })
     }
     
