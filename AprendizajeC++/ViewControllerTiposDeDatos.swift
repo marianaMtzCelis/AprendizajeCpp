@@ -11,6 +11,7 @@ class ViewControllerTiposDeDatos: UIViewController {
 
     var listaDatosGlobo : [DatosGlobo]!
     var listaTiposDeDatos : [String]!
+    var timerJuego : Timer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,18 +36,26 @@ class ViewControllerTiposDeDatos: UIViewController {
             print("Error al cargar el archivo tiposDeDatos.json")
         }
         
-        // Create balloons
-        createBalloons()
-        
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTapBalloon)))
     }
     
-    fileprivate func createBalloons() {
+    override func viewDidAppear(_ animated: Bool) {
+        createBalloons()
+        timerJuego = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(createBalloons), userInfo: nil, repeats: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        timerJuego?.invalidate()
+    }
+    
+    @objc fileprivate func createBalloons() {
         var i = 1
-        listaDatosGlobo.forEach { (balloonData) in
+        let globosRandom = [DatosGlobo](listaDatosGlobo.shuffled()[0..<5])
+        globosRandom.forEach { (balloonData) in
             let balloonImage = UIImage(named: balloonData.nombre_imagen)
             let balloonImageView = UIImageView(image: balloonImage)
-            balloonImageView.frame = CGRect(x: i, y: Int(view.frame.height), width: 50, height: 75)
+            balloonImageView.frame = CGRect(x: i, y: Int(view.frame.height), width: 100, height: 150)
             balloonImageView.contentMode = .scaleAspectFit
             view.addSubview(balloonImageView)
             i += 72
@@ -57,7 +66,7 @@ class ViewControllerTiposDeDatos: UIViewController {
     fileprivate func animateBalloon(balloonImageView: UIImageView) {
         let delay = Int.random(in: 0..<6)
         
-        UIView.animate(withDuration: 20, delay: Double(delay), animations: {
+        UIView.animate(withDuration: 10, delay: Double(delay), animations: {
             balloonImageView.center.y = -50
         })
     }
@@ -69,8 +78,9 @@ class ViewControllerTiposDeDatos: UIViewController {
             guard let balloonLocation = v.layer.presentation()?.frame else {return}
             
             if balloonLocation.contains(location) {
-                let balloonImageView = v as! UIImageView;
-                balloonPop(balloonImageView: balloonImageView)
+                if let balloonImageView = v as? UIImageView {
+                    balloonPop(balloonImageView: balloonImageView)
+                }
             }
         }
     }
