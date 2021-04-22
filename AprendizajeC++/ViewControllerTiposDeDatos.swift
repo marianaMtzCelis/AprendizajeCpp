@@ -14,8 +14,10 @@ class ViewControllerTiposDeDatos: UIViewController {
     var timerJuego : Timer?
     var tipoDeDatoPartida : String = ""
     var puntos : Int = 0
+    var vidas : Int = 3
     
     @IBOutlet weak var labelPuntos: UILabel!
+    @IBOutlet weak var labelVidas: UILabel!
     @IBOutlet weak var tituloJuego: UILabel!
     
     override func viewDidLoad() {
@@ -50,7 +52,7 @@ class ViewControllerTiposDeDatos: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         createBalloons()
-        timerJuego = Timer.scheduledTimer(timeInterval: 4.2, target: self, selector: #selector(createBalloons), userInfo: nil, repeats: true)
+        timerJuego = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(createBalloons), userInfo: nil, repeats: true)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -64,6 +66,7 @@ class ViewControllerTiposDeDatos: UIViewController {
         globosRandom.forEach { (balloonData) in
             let balloonImage = UIImage(named: balloonData.nombre_imagen)
             let balloonImageView = UIImageView(image: balloonImage)
+            balloonImageView.accessibilityLabel = balloonData.tipo
             balloonImageView.frame = CGRect(x: i, y: Int(view.frame.height), width: 100, height: 150)
             balloonImageView.contentMode = .scaleAspectFit
             view.addSubview(balloonImageView)
@@ -96,13 +99,30 @@ class ViewControllerTiposDeDatos: UIViewController {
     }
     
     fileprivate func balloonPop(balloonImageView: UIImageView) {
+        
+        if balloonImageView.accessibilityLabel == tipoDeDatoPartida {
+            incrementarPuntos()
+        } else {
+            quitarVida()
+        }
+        
         balloonImageView.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
         
         UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 3.0, options: .allowUserInteraction, animations: {
             balloonImageView.transform = CGAffineTransform(scaleX: 4, y: 4)
         }) { (_) in
-            balloonImageView.alpha = 0
+            balloonImageView.removeFromSuperview()
         }
+    }
+    
+    func incrementarPuntos() {
+        puntos += 1
+        labelPuntos.text = "Puntos: " + String(puntos)
+    }
+    
+    func quitarVida() {
+        vidas -= 1
+        labelVidas.text = "Vidas: " + String(vidas)
     }
 
     // MARK: - Navigation
