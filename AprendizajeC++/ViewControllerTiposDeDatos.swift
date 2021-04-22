@@ -9,10 +9,31 @@ import UIKit
 
 class ViewControllerTiposDeDatos: UIViewController {
 
+    var listaDatosGlobo : [DatosGlobo]!
+    var listaTiposDeDatos : [String]!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Load balloon data (list of DatosGlobo)
+        let rutaDatosGlobo = Bundle.main.path(forResource: "listaValores", ofType: "json")!
+
+        do {
+            let data = try Data.init(contentsOf: URL(fileURLWithPath: rutaDatosGlobo))
+            listaDatosGlobo = try JSONDecoder().decode([DatosGlobo].self, from: data)
+        } catch {
+            print("Error al cargar el archivo listaValores.json")
+        }
+
+        // Load tipos de datos (list of Strings)
+        let rutaTiposDeDatos = Bundle.main.path(forResource: "tiposDeDatos", ofType: "json")!
+
+        do {
+            let data = try Data.init(contentsOf: URL(fileURLWithPath: rutaTiposDeDatos))
+            listaTiposDeDatos = try JSONDecoder().decode([String].self, from: data)
+        } catch {
+            print("Error al cargar el archivo tiposDeDatos.json")
+        }
     }
     
 
