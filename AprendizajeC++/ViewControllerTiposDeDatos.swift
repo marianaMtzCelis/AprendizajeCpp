@@ -35,10 +35,12 @@ class ViewControllerTiposDeDatos: UIViewController {
             print("Error al cargar el archivo tiposDeDatos.json")
         }
         
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTapBalloon)))
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         // Create balloons
         createBalloons()
-        
-        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTapBalloon)))
     }
     
     fileprivate func createBalloons() {
