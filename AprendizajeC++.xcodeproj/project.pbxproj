@@ -28,6 +28,7 @@
 		28CCE63A262E2BF300EA2B5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CCE638262E2BF300EA2B5C /* Main.storyboard */; };
 		28CCE63C262E2BF400EA2B5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28CCE63B262E2BF400EA2B5C /* Assets.xcassets */; };
 		28CCE63F262E2BF400EA2B5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CCE63D262E2BF400EA2B5C /* LaunchScreen.storyboard */; };
+		5D0174FB263104160011745A /* DatosGlobo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0174FA263104160011745A /* DatosGlobo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		28CCE63B262E2BF400EA2B5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28CCE63E262E2BF400EA2B5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28CCE640262E2BF400EA2B5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D0174FA263104160011745A /* DatosGlobo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosGlobo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				280C38992630D99900F5E4BE /* Fruta.swift */,
 				285CD3352630EA9F00FF5DDE /* listaValores.json */,
 				285CD3382630EAA800FF5DDE /* tiposDeDatos.json */,
+				5D0174FA263104160011745A /* DatosGlobo.swift */,
 			);
 			path = "AprendizajeC++";
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				280C389A2630D99900F5E4BE /* Fruta.swift in Sources */,
 				280C388B2630D82E00F5E4BE /* ViewControllerFinCiclos.swift in Sources */,
 				280C38832630D7C600F5E4BE /* Pregunta.swift in Sources */,
+				5D0174FB263104160011745A /* DatosGlobo.swift in Sources */,
 				280C388E2630D86A00F5E4BE /* Ciclo.swift in Sources */,
 				280C38802630D72D00F5E4BE /* ViewControllerFinCondicionales.swift in Sources */,
 				280C38932630D89200F5E4BE /* ViewControllerPalabrasReservadas.swift in Sources */,
