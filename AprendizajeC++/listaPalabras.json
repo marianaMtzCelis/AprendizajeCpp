@@ -118,5 +118,29 @@
     {
         "isReserved" : false,
         "nombre_imagen" : "pineappleNo3"
+    },
+    {
+        "isReserved" : true,
+        "nombre_imagen" : "watermelonSi1"
+    },
+    {
+        "isReserved" : true,
+        "nombre_imagen" : "watermelonSi2"
+    },
+    {
+        "isReserved" : true,
+        "nombre_imagen" : "watermelonSi3"
+    },
+    {
+        "isReserved" : false,
+        "nombre_imagen" : "watermelonNo1"
+    },
+    {
+        "isReserved" : false,
+        "nombre_imagen" : "watermelonNo2"
+    },
+    {
+        "isReserved" : false,
+        "nombre_imagen" : "watermelonNo3"
     }
 ] 
