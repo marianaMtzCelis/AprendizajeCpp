@@ -28,6 +28,7 @@
 		28CCE63A262E2BF300EA2B5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CCE638262E2BF300EA2B5C /* Main.storyboard */; };
 		28CCE63C262E2BF400EA2B5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28CCE63B262E2BF400EA2B5C /* Assets.xcassets */; };
 		28CCE63F262E2BF400EA2B5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CCE63D262E2BF400EA2B5C /* LaunchScreen.storyboard */; };
+		5D0154A82638E61600639FB2 /* listaPalabras.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D0154A72638E61600639FB2 /* listaPalabras.json */; };
 		5D0174FB263104160011745A /* DatosGlobo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0174FA263104160011745A /* DatosGlobo.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		28CCE63B262E2BF400EA2B5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28CCE63E262E2BF400EA2B5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28CCE640262E2BF400EA2B5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D0154A72638E61600639FB2 /* listaPalabras.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listaPalabras.json; sourceTree = "<group>"; };
 		5D0174FA263104160011745A /* DatosGlobo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosGlobo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 				280C386C2630D55C00F5E4BE /* ViewControllerMenu.swift */,
 				280C38702630D5E500F5E4BE /* ViewControllerTiposDeDatos.swift */,
 				280C38742630D66200F5E4BE /* ViewControllerFinTiposDeDatos.swift */,
+				5D0154A72638E61600639FB2 /* listaPalabras.json */,
 				280C38772630D6A600F5E4BE /* Globo.swift */,
 				280C387B2630D6DF00F5E4BE /* ViewControllerCondicionales.swift */,
 				280C387F2630D72D00F5E4BE /* ViewControllerFinCondicionales.swift */,
@@ -173,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28CCE63F262E2BF400EA2B5C /* LaunchScreen.storyboard in Resources */,
+				5D0154A82638E61600639FB2 /* listaPalabras.json in Resources */,
 				28CCE63C262E2BF400EA2B5C /* Assets.xcassets in Resources */,
 				285CD3362630EA9F00FF5DDE /* listaValores.json in Resources */,
 				285CD3392630EAA800FF5DDE /* tiposDeDatos.json in Resources */,
