@@ -8,11 +8,15 @@
 import UIKit
 
 class ViewControllerFinTiposDeDatos: UIViewController {
-
+    
+    @IBOutlet weak var lbPts: UILabel!
+    var pts : Int = 0
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        lbPts.text = String(pts)
     }
     
 

@@ -123,6 +123,9 @@ class ViewControllerTiposDeDatos: UIViewController {
     func quitarVida() {
         vidas -= 1
         labelVidas.text = "Vidas: " + String(vidas)
+        if ( vidas == 0 ){
+            performSegue(withIdentifier: "globosFinSegue", sender: nil)
+        }
     }
 
     // MARK: - Navigation
@@ -131,6 +134,7 @@ class ViewControllerTiposDeDatos: UIViewController {
         if segue.identifier == "globosFinSegue" {
             
             let viewFinGlobos = segue.destination as! ViewControllerFinTiposDeDatos
+            viewFinGlobos.pts = puntos
             
         }
     }

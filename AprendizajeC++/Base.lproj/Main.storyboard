@@ -186,6 +186,9 @@
                         <color key="backgroundColor" red="0.50111621620000002" green="0.76542609930000005" blue="0.33715838190000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="ng6-SI-S5w"/>
+                    <connections>
+                        <outlet property="lbPts" destination="Wpj-ZL-Kix" id="DCO-kz-TEs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06n-dx-NSm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -590,11 +593,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ogd-75-oUp"/>
+        <segue reference="KUj-jh-Ezf"/>
+        <segue reference="NqQ-MN-cvp"/>
         <segue reference="MRU-mL-5tg"/>
         <segue reference="KHa-Jz-vRV"/>
         <segue reference="BIW-dB-RFe"/>
-        <segue reference="reF-H5-3J4"/>
+        <segue reference="9r9-vy-Jsh"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="botonCiclos" width="444" height="864"/>
