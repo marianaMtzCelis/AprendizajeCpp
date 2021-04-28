@@ -1,0 +1,122 @@
+[
+    {
+        "isReserved" : true,
+        "nombre_imagen" : "appleSi1"
+    },
+    {
+        "isReserved" : true,
+        "nombre_imagen" : "appleSi2"
+    },
+    {
+        "isReserved" : true,
+        "nombre_imagen" : "appleSi3"
+    },
+    {
+        "isReserved" : false,
+        "nombre_imagen" : "appleNo1"
+    },
+    {
+        "isReserved" : false,
+        "nombre_imagen" : "appleNo2"
+    },
+    {
+        "isReserved" : false,
+        "nombre_imagen" : "appleNo3"
+    },
+    {
+        "isReserved" : true,
+        "nombre_imagen" : "bananaSi1"
+    },
+    {
+        "isReserved" : true,
+        "nombre_imagen" : "bananaSi2"
+    },
+    {
+        "isReserved" : true,
+        "nombre_imagen" : "bananaSi3"
+    },
+    {
+        "isReserved" : false,
+        "nombre_imagen" : "bananaNo1"
+    },
+    {
+        "isReserved" : false,
+        "nombre_imagen" : "bananaNo2"
+    },
+    {
+        "isReserved" : false,
+        "nombre_imagen" : "bananaNo3"
+    },
+    {
+        "isReserved" : true,
+        "nombre_imagen" : "coconutSi1"
+    },
+    {
+        "isReserved" : true,
+        "nombre_imagen" : "coconutSi2"
+    },
+    {
+        "isReserved" : true,
+        "nombre_imagen" : "coconutSi3"
+    },
+    {
+        "isReserved" : false,
+        "nombre_imagen" : "coconutNo1"
+    },
+    {
+        "isReserved" : false,
+        "nombre_imagen" : "coconutNo2"
+    },
+    {
+        "isReserved" : false,
+        "nombre_imagen" : "coconutNo3"
+    },
+    {
+        "isReserved" : true,
+        "nombre_imagen" : "orangeSi1"
+    },
+    {
+        "isReserved" : true,
+        "nombre_imagen" : "orangeSi2"
+    },
+    {
+        "isReserved" : true,
+        "nombre_imagen" : "orangeSi3"
+    },
+    {
+        "isReserved" : false,
+        "nombre_imagen" : "orangeNo1"
+    },
+    {
+        "isReserved" : false,
+        "nombre_imagen" : "orangeNo2"
+    },
+    {
+        "isReserved" : false,
+        "nombre_imagen" : "orangeNo3"
+    },
+    {
+        "isReserved" : true,
+        "nombre_imagen" : "pineappleSi1"
+    },
+    {
+        "isReserved" : true,
+        "nombre_imagen" : "pineappleSi2"
+    },
+    {
+        "isReserved" : true,
+        "nombre_imagen" : "pineappleSi3"
+    },
+    {
+        "isReserved" : false,
+        "nombre_imagen" : "pineappleNo1"
+    },
+    {
+        "isReserved" : false,
+        "nombre_imagen" : "pineappleNo2"
+    },
+    {
+        "isReserved" : false,
+        "nombre_imagen" : "pineappleNo3"
+    }
+] 
