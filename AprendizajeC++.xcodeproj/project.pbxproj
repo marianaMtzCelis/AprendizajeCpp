@@ -30,6 +30,7 @@
 		28CCE63F262E2BF400EA2B5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CCE63D262E2BF400EA2B5C /* LaunchScreen.storyboard */; };
 		5D0154A82638E61600639FB2 /* listaPalabras.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D0154A72638E61600639FB2 /* listaPalabras.json */; };
 		5D0174FB263104160011745A /* DatosGlobo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0174FA263104160011745A /* DatosGlobo.swift */; };
+		5D03E73F263A2B47006EECA7 /* DatosFruta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D03E73E263A2B47006EECA7 /* DatosFruta.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		28CCE640262E2BF400EA2B5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D0154A72638E61600639FB2 /* listaPalabras.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listaPalabras.json; sourceTree = "<group>"; };
 		5D0174FA263104160011745A /* DatosGlobo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosGlobo.swift; sourceTree = "<group>"; };
+		5D03E73E263A2B47006EECA7 /* DatosFruta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosFruta.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				5D0154A72638E61600639FB2 /* listaPalabras.json */,
 				280C388D2630D86A00F5E4BE /* Ciclo.swift */,
 				5D0174FA263104160011745A /* DatosGlobo.swift */,
+				5D03E73E263A2B47006EECA7 /* DatosFruta.swift */,
 				280C38992630D99900F5E4BE /* Fruta.swift */,
 				280C38772630D6A600F5E4BE /* Globo.swift */,
 				28CCE640262E2BF400EA2B5C /* Info.plist */,
@@ -207,6 +210,7 @@
 				280C38802630D72D00F5E4BE /* ViewControllerFinCondicionales.swift in Sources */,
 				280C38932630D89200F5E4BE /* ViewControllerPalabrasReservadas.swift in Sources */,
 				28CCE635262E2BF300EA2B5C /* SceneDelegate.swift in Sources */,
+				5D03E73F263A2B47006EECA7 /* DatosFruta.swift in Sources */,
 				280C38662630D39000F5E4BE /* ViewControllerBienvenida.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

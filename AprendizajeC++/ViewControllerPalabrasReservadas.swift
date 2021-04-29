@@ -9,10 +9,20 @@ import UIKit
 
 class ViewControllerPalabrasReservadas: UIViewController {
 
+    var listaDatosFrutas : [DatosFruta]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Load fruit data (list of DatosFruta)
+        let rutaDatosFruta = Bundle.main.path(forResource: "listaPalabras", ofType: "json")!
+
+        do {
+            let data = try Data.init(contentsOf: URL(fileURLWithPath: rutaDatosFruta))
+            listaDatosFrutas = try JSONDecoder().decode([DatosFruta].self, from: data)
+        } catch {
+            print("Error al cargar el archivo listaValores.json")
+        }
     }
     
 
