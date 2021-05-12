@@ -1,0 +1,40 @@
+[
+    {
+        "nombre_imagen" : "ciclo1",
+        "respuestas" : [
+            "(",
+            ")"
+        ]
+    },
+    {
+        "nombre_imagen" : "ciclo2",
+        "respuestas" : [
+            ")",
+            "<<",
+            "<<"
+        ]
+    },
+    {
+        "nombre_imagen" : "ciclo3",
+        "respuestas" : [
+            "(",
+            "cout",
+            "cout"
+        ]
+    },
+    {
+        "nombre_imagen" : "ciclo4",
+        "respuestas" : [
+            "(",
+            ")"
+        ]
+    },
+    {
+        "nombre_imagen" : "ciclo5",
+        "respuestas" : [
+            "=",
+            "if",
+            "<<"
+        ]
+    }
+]

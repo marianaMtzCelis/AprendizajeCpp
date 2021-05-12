@@ -9,6 +9,8 @@ import UIKit
 
 class ViewControllerCiclos: UIViewController {
 
+    var listaDatosCiclo : [DatosCiclo]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
