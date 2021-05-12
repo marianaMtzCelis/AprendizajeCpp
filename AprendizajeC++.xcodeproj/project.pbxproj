@@ -36,6 +36,7 @@
 		5D0174FB263104160011745A /* DatosGlobo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0174FA263104160011745A /* DatosGlobo.swift */; };
 		5D03E73F263A2B47006EECA7 /* DatosFruta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D03E73E263A2B47006EECA7 /* DatosFruta.swift */; };
 		5D374D59264C9CF20081A64A /* DatosCiclo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D374D58264C9CF20081A64A /* DatosCiclo.swift */; };
+		5D374D5E264CA1570081A64A /* listaCiclos.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D374D5D264CA1570081A64A /* listaCiclos.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		5D0174FA263104160011745A /* DatosGlobo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosGlobo.swift; sourceTree = "<group>"; };
 		5D03E73E263A2B47006EECA7 /* DatosFruta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosFruta.swift; sourceTree = "<group>"; };
 		5D374D58264C9CF20081A64A /* DatosCiclo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosCiclo.swift; sourceTree = "<group>"; };
+		5D374D5D264CA1570081A64A /* listaCiclos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listaCiclos.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				280C388D2630D86A00F5E4BE /* Ciclo.swift */,
 				5D0174FA263104160011745A /* DatosGlobo.swift */,
 				5D03E73E263A2B47006EECA7 /* DatosFruta.swift */,
+				5D374D5D264CA1570081A64A /* listaCiclos.json */,
 				5D374D58264C9CF20081A64A /* DatosCiclo.swift */,
 				280C38772630D6A600F5E4BE /* Globo.swift */,
 				28CCE640262E2BF400EA2B5C /* Info.plist */,
@@ -194,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28CCE63F262E2BF400EA2B5C /* LaunchScreen.storyboard in Resources */,
+				5D374D5E264CA1570081A64A /* listaCiclos.json in Resources */,
 				5D0154A82638E61600639FB2 /* listaPalabras.json in Resources */,
 				28CCE63C262E2BF400EA2B5C /* Assets.xcassets in Resources */,
 				287F1C95264B8AA60061314F /* Explode.sks in Resources */,
