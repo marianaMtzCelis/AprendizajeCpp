@@ -6,10 +6,14 @@
 //
 
 import UIKit
+import SpriteKit
 
 class ViewControllerPalabrasReservadas: UIViewController {
 
     var listaDatosFrutas : [DatosFruta]!
+    
+    @IBOutlet weak var skView: SKView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -20,7 +20,6 @@
 		280C388E2630D86A00F5E4BE /* Ciclo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280C388D2630D86A00F5E4BE /* Ciclo.swift */; };
 		280C38932630D89200F5E4BE /* ViewControllerPalabrasReservadas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280C38922630D89200F5E4BE /* ViewControllerPalabrasReservadas.swift */; };
 		280C38972630D95000F5E4BE /* ViewControllerFinPalabrasReservadas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280C38962630D95000F5E4BE /* ViewControllerFinPalabrasReservadas.swift */; };
-		280C389A2630D99900F5E4BE /* Fruta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280C38992630D99900F5E4BE /* Fruta.swift */; };
 		285CD3362630EA9F00FF5DDE /* listaValores.json in Resources */ = {isa = PBXBuildFile; fileRef = 285CD3352630EA9F00FF5DDE /* listaValores.json */; };
 		285CD3392630EAA800FF5DDE /* tiposDeDatos.json in Resources */ = {isa = PBXBuildFile; fileRef = 285CD3382630EAA800FF5DDE /* tiposDeDatos.json */; };
 		28CCE633262E2BF300EA2B5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCE632262E2BF300EA2B5C /* AppDelegate.swift */; };
@@ -47,7 +46,6 @@
 		280C388D2630D86A00F5E4BE /* Ciclo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ciclo.swift; sourceTree = "<group>"; };
 		280C38922630D89200F5E4BE /* ViewControllerPalabrasReservadas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPalabrasReservadas.swift; sourceTree = "<group>"; };
 		280C38962630D95000F5E4BE /* ViewControllerFinPalabrasReservadas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFinPalabrasReservadas.swift; sourceTree = "<group>"; };
-		280C38992630D99900F5E4BE /* Fruta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruta.swift; sourceTree = "<group>"; };
 		285CD3352630EA9F00FF5DDE /* listaValores.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listaValores.json; sourceTree = "<group>"; };
 		285CD3382630EAA800FF5DDE /* tiposDeDatos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tiposDeDatos.json; sourceTree = "<group>"; };
 		28CCE62F262E2BF300EA2B5C /* AprendizajeC++.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AprendizajeC++.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,7 +96,6 @@
 				280C388D2630D86A00F5E4BE /* Ciclo.swift */,
 				5D0174FA263104160011745A /* DatosGlobo.swift */,
 				5D03E73E263A2B47006EECA7 /* DatosFruta.swift */,
-				280C38992630D99900F5E4BE /* Fruta.swift */,
 				280C38772630D6A600F5E4BE /* Globo.swift */,
 				28CCE640262E2BF400EA2B5C /* Info.plist */,
 				28CCE63D262E2BF400EA2B5C /* LaunchScreen.storyboard */,
@@ -202,7 +199,6 @@
 				280C386D2630D55C00F5E4BE /* ViewControllerMenu.swift in Sources */,
 				28CCE633262E2BF300EA2B5C /* AppDelegate.swift in Sources */,
 				280C38782630D6A600F5E4BE /* Globo.swift in Sources */,
-				280C389A2630D99900F5E4BE /* Fruta.swift in Sources */,
 				280C388B2630D82E00F5E4BE /* ViewControllerFinCiclos.swift in Sources */,
 				280C38832630D7C600F5E4BE /* Pregunta.swift in Sources */,
 				5D0174FB263104160011745A /* DatosGlobo.swift in Sources */,
