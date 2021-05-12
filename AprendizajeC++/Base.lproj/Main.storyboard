@@ -367,7 +367,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <skView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWz-sB-XLq">
+                            <skView contentMode="scaleToFill" fixedFrame="YES" sceneName="FScene.sks" translatesAutoresizingMaskIntoConstraints="NO" id="SWz-sB-XLq">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </skView>
