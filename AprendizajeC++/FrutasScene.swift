@@ -25,6 +25,8 @@ class FrutasScene: SKScene {
     
     var fruitThrowTimer = Timer()
     
+    var explodeOverlay = SKShapeNode()
+    
     override func didMove(to view: SKView) {
         
         lbPuntos = childNode(withName: "lbPuntos") as! SKLabelNode
@@ -33,6 +35,11 @@ class FrutasScene: SKScene {
         lbVidas.text = "\(vidas)"
         
         physicsWorld.gravity = CGVector(dx:0, dy:-2)
+        
+        explodeOverlay = SKShapeNode(rect: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        explodeOverlay.fillColor = .white
+        addChild(explodeOverlay)
+        explodeOverlay.alpha = 0
         
         
     }
@@ -56,12 +63,16 @@ class FrutasScene: SKScene {
                     puntos += 1
                     lbPuntos.text = "\(puntos)"
                     node.removeFromParent()
+                    particleEffect(position: node.position)
                     
                 } else if node.name == "bomb"{
+                    
+                    bombExplode()
                     
                     vidas -= 1
                     lbVidas.text = "\(vidas)"
                     node.removeFromParent()
+                    particleEffect(position: node.position)
                     
                     if (vidas < 1) {
                         gameOver()
@@ -123,16 +134,40 @@ class FrutasScene: SKScene {
     
     func bombExplode() {
         
+        for case let fruit as Fruta in children {
+            fruit.removeFromParent()
+            particleEffect(position: fruit.position)
+        }
+        
+        explodeOverlay.run(SKAction.sequence([
+            SKAction.fadeAlpha(to: 1, duration: 0),
+            SKAction.wait(forDuration: 0.2),
+            SKAction.fadeAlpha(to: 0, duration: 0),
+            SKAction.wait(forDuration: 0.2),
+            SKAction.fadeAlpha(to: 1, duration: 0),
+            SKAction.wait(forDuration: 0.2),
+            SKAction.fadeAlpha(to: 0, duration: 0)
+        ]))
+        
     }
     
     func gameOver() {
         
         gamePhase = .GameOver
         
+        fruitThrowTimer.invalidate()
+        
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false, block: {_ in self.gamePhase = .Ready})
         // segue a fin de juego
         
         
+    }
+    
+    func particleEffect(position: CGPoint) {
+        
+        let emitter = SKEmitterNode(fileNamed: "Explode.sks")
+        emitter?.position = position
+        addChild(emitter!)
     }
 
 }

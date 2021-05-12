@@ -26,6 +26,7 @@
 		287F1C8F264B84790061314F /* FrutasScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F1C8E264B84790061314F /* FrutasScene.swift */; };
 		287F1C91264B868A0061314F /* Fruta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F1C90264B868A0061314F /* Fruta.swift */; };
 		287F1C93264B86A30061314F /* HelpingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F1C92264B86A30061314F /* HelpingFunctions.swift */; };
+		287F1C95264B8AA60061314F /* Explode.sks in Resources */ = {isa = PBXBuildFile; fileRef = 287F1C94264B8AA60061314F /* Explode.sks */; };
 		28CCE633262E2BF300EA2B5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCE632262E2BF300EA2B5C /* AppDelegate.swift */; };
 		28CCE635262E2BF300EA2B5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCE634262E2BF300EA2B5C /* SceneDelegate.swift */; };
 		28CCE63A262E2BF300EA2B5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CCE638262E2BF300EA2B5C /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		287F1C8E264B84790061314F /* FrutasScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutasScene.swift; sourceTree = "<group>"; };
 		287F1C90264B868A0061314F /* Fruta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruta.swift; sourceTree = "<group>"; };
 		287F1C92264B86A30061314F /* HelpingFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpingFunctions.swift; sourceTree = "<group>"; };
+		287F1C94264B8AA60061314F /* Explode.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explode.sks; sourceTree = "<group>"; };
 		28CCE62F262E2BF300EA2B5C /* AprendizajeC++.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AprendizajeC++.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28CCE632262E2BF300EA2B5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28CCE634262E2BF300EA2B5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				287F1C8E264B84790061314F /* FrutasScene.swift */,
 				287F1C90264B868A0061314F /* Fruta.swift */,
 				287F1C92264B86A30061314F /* HelpingFunctions.swift */,
+				287F1C94264B8AA60061314F /* Explode.sks */,
 			);
 			path = "AprendizajeC++";
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				28CCE63F262E2BF400EA2B5C /* LaunchScreen.storyboard in Resources */,
 				5D0154A82638E61600639FB2 /* listaPalabras.json in Resources */,
 				28CCE63C262E2BF400EA2B5C /* Assets.xcassets in Resources */,
+				287F1C95264B8AA60061314F /* Explode.sks in Resources */,
 				287F1C8D264B83840061314F /* FScene.sks in Resources */,
 				285CD3362630EA9F00FF5DDE /* listaValores.json in Resources */,
 				285CD3392630EAA800FF5DDE /* tiposDeDatos.json in Resources */,
