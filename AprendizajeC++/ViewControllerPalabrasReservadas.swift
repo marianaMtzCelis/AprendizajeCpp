@@ -6,10 +6,19 @@
 //
 
 import UIKit
+import SpriteKit
 
 class ViewControllerPalabrasReservadas: UIViewController {
 
     var listaDatosFrutas : [DatosFruta]!
+    
+    @IBOutlet weak var skView: SKView!
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let frutasScene = SKScene(fileNamed: "FrutasScene") {
+            skView.presentScene(frutasScene)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
