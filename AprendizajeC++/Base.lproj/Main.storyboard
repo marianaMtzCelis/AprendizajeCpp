@@ -217,16 +217,16 @@
                                     <segue destination="aLl-Ej-j7f" kind="show" identifier="ciclosFinSegue" id="zC6-Iq-W3S"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zLd-hL-uB4">
-                                <rect key="frame" x="39" y="551" width="296" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="peM-Cf-yS2">
                                 <rect key="frame" x="0.0" y="133" width="375" height="311"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bcD-5W-Vbf">
-                                <rect key="frame" x="39" y="465" width="296" height="68"/>
+                                <rect key="frame" x="26" y="466" width="322" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zLd-hL-uB4">
+                                <rect key="frame" x="26" y="546" width="322" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
                         </subviews>
@@ -235,8 +235,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="bLz-lb-igD"/>
                     <connections>
-                        <outlet property="HStackIncognitas" destination="bcD-5W-Vbf" id="on8-lf-o3O"/>
-                        <outlet property="HStackTextFields" destination="zLd-hL-uB4" id="YjW-CZ-teY"/>
+                        <outlet property="HStackIncognitas" destination="bcD-5W-Vbf" id="Jzs-aY-S8I"/>
+                        <outlet property="HStackTextFields" destination="zLd-hL-uB4" id="qnd-6R-d68"/>
+                        <outlet property="ImagenCiclo" destination="peM-Cf-yS2" id="5Mv-Yb-q1A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1gi-lo-foj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
