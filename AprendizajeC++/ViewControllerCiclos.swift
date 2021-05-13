@@ -12,8 +12,7 @@ class ViewControllerCiclos: UIViewController {
     var listaDatosCiclo : [DatosCiclo]!
     var listaTextBoxIncognitas : [UITextField]!
     var iIncognitas : Int!
-    @IBOutlet weak var HStackIncognitas: UIStackView!
-    @IBOutlet weak var HStackTextFields: UIStackView!
+    @IBOutlet weak var VStackPreguntas: UIStackView!
     @IBOutlet weak var ImagenCiclo: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,22 +30,33 @@ class ViewControllerCiclos: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         // Initialize textbox list
         listaTextBoxIncognitas = [UITextField]()
-        mostrarCiclo(indiceCiclo: 0)
+        var indice = Int.random(in: 0..<listaDatosCiclo.count)
+        indice = 3
+        mostrarCiclo(indiceCiclo: indice)
     }
     
     func mostrarCiclo(indiceCiclo: Int) {
         let cCiclo = listaDatosCiclo[indiceCiclo]
         iIncognitas = cCiclo.respuestas.count
+        print(iIncognitas)
         // set code image
         ImagenCiclo.image = UIImage(named: cCiclo.nombre_imagen)
         for i in 0..<iIncognitas {
+            // Create label
             let label = UILabel()
             label.text = cCiclo.incognitas[i]
-            HStackIncognitas.addArrangedSubview(label)
+            // Create text field
             let textField = UITextField()
             textField.backgroundColor = .white
             listaTextBoxIncognitas.append(textField)
-            HStackTextFields.addArrangedSubview(textField)
+            // Create HStack
+            let HStack = UIStackView()
+            HStack.axis = .horizontal
+            HStack.alignment = .center
+            HStack.distribution = .fillEqually
+            HStack.addArrangedSubview(label)
+            HStack.addArrangedSubview(textField)
+            VStackPreguntas.addArrangedSubview(HStack)
         }
     }
 
