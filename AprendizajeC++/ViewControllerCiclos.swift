@@ -14,7 +14,15 @@ class ViewControllerCiclos: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Load ciclos data (list of DatosCiclo)
+        let rutaDatosCiclo = Bundle.main.path(forResource: "listaCiclos", ofType: "json")!
+
+        do {
+            let data = try Data.init(contentsOf: URL(fileURLWithPath: rutaDatosCiclo))
+            listaDatosCiclo = try JSONDecoder().decode([DatosCiclo].self, from: data)
+        } catch {
+            print("Error al cargar el archivo listaCiclos.json")
+        }
     }
     
 
