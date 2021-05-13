@@ -10,7 +10,11 @@ import UIKit
 class ViewControllerCiclos: UIViewController {
 
     var listaDatosCiclo : [DatosCiclo]!
-    
+    var listaLabelsIncognitas : [UILabel]!
+    var listaTextBoxIncognitas : [UITextField]!
+    var iIncognitas : Int!
+    @IBOutlet weak var HStackIncognitas: UIStackView!
+    @IBOutlet weak var HStackTextFields: UIStackView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,7 +28,6 @@ class ViewControllerCiclos: UIViewController {
             print("Error al cargar el archivo listaCiclos.json")
         }
     }
-    
 
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
