@@ -31,7 +31,6 @@ class ViewControllerCiclos: UIViewController {
         // Initialize textbox list
         listaTextBoxIncognitas = [UITextField]()
         var indice = Int.random(in: 0..<listaDatosCiclo.count)
-        indice = 3
         mostrarCiclo(indiceCiclo: indice)
     }
     
