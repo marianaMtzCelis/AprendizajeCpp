@@ -1,6 +1,10 @@
 [
     {
         "nombre_imagen" : "ciclo1",
+        "incognitas" : [
+            "A",
+            "B"
+        ],
         "respuestas" : [
             "(",
             ")"
@@ -8,6 +12,11 @@
     },
     {
         "nombre_imagen" : "ciclo2",
+        "incognitas" : [
+            "A",
+            "B",
+            "C"
+        ],
         "respuestas" : [
             ")",
             "<<",
@@ -16,6 +25,11 @@
     },
     {
         "nombre_imagen" : "ciclo3",
+        "incognitas" : [
+            "A",
+            "B",
+            "C"
+        ],
         "respuestas" : [
             "(",
             "cout",
@@ -24,6 +38,11 @@
     },
     {
         "nombre_imagen" : "ciclo4",
+        "incognitas" : [
+            "A",
+            "B",
+            "C"
+        ],
         "respuestas" : [
             "(",
             ")"
@@ -31,6 +50,11 @@
     },
     {
         "nombre_imagen" : "ciclo5",
+        "incognitas" : [
+            "A",
+            "B",
+            "C"
+        ],
         "respuestas" : [
             "=",
             "if",
