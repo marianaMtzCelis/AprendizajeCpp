@@ -218,12 +218,8 @@
                                     <segue destination="aLl-Ej-j7f" kind="show" identifier="ciclosFinSegue" id="zC6-Iq-W3S"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="peM-Cf-yS2">
-                                <rect key="frame" x="0.0" y="133" width="375" height="311"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uWN-J5-xlJ">
-                                <rect key="frame" x="16" y="452" width="343" height="127"/>
+                                <rect key="frame" x="122" y="452" width="132" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yb-SW-aIc">
@@ -234,6 +230,18 @@
                                     <color key="titleColor" systemColor="systemGray6Color"/>
                                 </state>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rFI-Fw-N6Z">
+                                <rect key="frame" x="0.0" y="133" width="375" height="311"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="peM-Cf-yS2">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="311"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="GsS-qV-02h"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="gyg-eD-sVv"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zKJ-m4-ufA"/>
                         <color key="backgroundColor" red="0.58164483310000004" green="0.4763759971" blue="0.74120402340000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -242,6 +250,7 @@
                     <connections>
                         <outlet property="ImagenCiclo" destination="peM-Cf-yS2" id="5Mv-Yb-q1A"/>
                         <outlet property="VStackPreguntas" destination="uWN-J5-xlJ" id="eeh-34-GTS"/>
+                        <outlet property="scrollView" destination="rFI-Fw-N6Z" id="QlQ-nf-Pv3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1gi-lo-foj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -622,11 +631,11 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="zC6-Iq-W3S"/>
-        <segue reference="NqQ-MN-cvp"/>
-        <segue reference="MRU-mL-5tg"/>
-        <segue reference="KHa-Jz-vRV"/>
-        <segue reference="BIW-dB-RFe"/>
-        <segue reference="9r9-vy-Jsh"/>
+        <segue reference="A6R-r9-EIH"/>
+        <segue reference="QiR-jx-xTh"/>
+        <segue reference="z2b-Av-uTU"/>
+        <segue reference="sDT-Cf-ovd"/>
+        <segue reference="reF-H5-3J4"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="botonCiclos" width="444" height="864"/>
