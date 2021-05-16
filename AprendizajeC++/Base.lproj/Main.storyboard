@@ -328,7 +328,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="fct-3z-qm8" kind="show" identifier="finCondicionalesSegue" id="KHa-Jz-vRV"/>
+                                    <action selector="volverAJugar:" destination="Q9P-4o-uWs" eventType="touchUpInside" id="mTr-nB-aGw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="esL-PS-UTq">
@@ -347,7 +347,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="Z6X-nd-iG6" kind="show" identifier="finCondicionalesMenuSegue" id="A1R-kh-rw6"/>
+                                    <action selector="volverAlMenu:" destination="Q9P-4o-uWs" eventType="touchUpInside" id="1XR-to-nSJ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Puntos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRT-H7-RjR">
@@ -634,7 +634,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="NqQ-MN-cvp"/>
-        <segue reference="z2b-Av-uTU"/>
         <segue reference="BIW-dB-RFe"/>
         <segue reference="9r9-vy-Jsh"/>
     </inferredMetricsTieBreakers>
