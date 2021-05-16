@@ -126,11 +126,11 @@ class FrutasScene: SKScene {
             fruit.physicsBody?.angularVelocity = randomCGFloat(-5, 5)
             
             if fruit.position.x < size.width/2 {
-                fruit.physicsBody?.velocity.dx = randomCGFloat(0, 200)
+                fruit.physicsBody?.velocity.dx = randomCGFloat(0, 50)
             }
             
             if fruit.position.x > size.width/2 {
-                fruit.physicsBody?.velocity.dx = randomCGFloat(0, -200)
+                fruit.physicsBody?.velocity.dx = randomCGFloat(0, -50)
             }
             
         }
