@@ -15,19 +15,14 @@ class ViewControllerFinCondicionales: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "volverCondicionalesSegue" {
-            
-            let viewCondicionales = segue.destination as! ViewControllerCondicionales
-            
-        } else if segue.identifier == "finCondicionalesMenuSegue" {
-            
-            let viewMenu = segue.destination as! ViewControllerMenu
-
-        }
+    
+    @IBAction func volverAlMenu(_ sender: Any) {
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
     }
-
+    
+    @IBAction func volverAJugar(_ sender: Any) {
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
+    }
+    
+    
 }

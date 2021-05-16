@@ -15,19 +15,10 @@ class ViewControllerFinCiclos: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "volverCiclosSegue" {
-            
-            let viewCiclos = segue.destination as! ViewControllerCiclos
-            
-        } else if segue.identifier == "finGlobosMeuSegue" {
-            
-            let viewMenu = segue.destination as! ViewControllerMenu
-
-        }
+    
+    @IBAction func volverAlMenu(_ sender: Any) {
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
     }
-
+    
+    
 }
