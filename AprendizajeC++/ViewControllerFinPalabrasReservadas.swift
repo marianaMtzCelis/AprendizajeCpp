@@ -8,11 +8,13 @@
 import UIKit
 
 class ViewControllerFinPalabrasReservadas: UIViewController {
-
+    
+    @IBOutlet weak var lbPuntos: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        actualizaInterfaz()
     }
     
 
@@ -28,6 +30,14 @@ class ViewControllerFinPalabrasReservadas: UIViewController {
             let viewMenu = segue.destination as! ViewControllerMenu
             
         }
+    }
+    
+    func actualizaInterfaz() {
+        
+        let defaults = UserDefaults.standard
+        let puntos = defaults.integer(forKey: "puntosFrutitas")
+        lbPuntos.text = String(puntos)
+        
     }
 
 }

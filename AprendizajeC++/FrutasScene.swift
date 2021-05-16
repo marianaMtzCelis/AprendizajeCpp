@@ -32,6 +32,9 @@ class FrutasScene: SKScene {
     
     override func didMove(to view: SKView) {
         
+        let app = UIApplication.shared
+        NotificationCenter.default.addObserver(self, selector: #selector(guardaDatosInterfaz), name: UIApplication.didEnterBackgroundNotification, object: app)
+        
         lbPuntos = childNode(withName: "lbPuntos") as! SKLabelNode
         lbPuntos.text = "\(puntos)"
         lbVidas = childNode(withName: "lbVidas") as! SKLabelNode
@@ -169,10 +172,10 @@ class FrutasScene: SKScene {
         
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false, block: {_ in self.gamePhase = .Ready})
         
+        guardaDatosInterfaz()
+        
         // segue a fin de juego
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "doaSegue"), object: nil)
-
-        
         
     }
     
@@ -181,6 +184,12 @@ class FrutasScene: SKScene {
         let emitter = SKEmitterNode(fileNamed: "Explode.sks")
         emitter?.position = position
         addChild(emitter!)
+    }
+    
+    @IBAction func guardaDatosInterfaz() {
+        
+        let defaults = UserDefaults.standard
+        defaults.set(puntos, forKey: "puntosFrutitas")
     }
 
 }

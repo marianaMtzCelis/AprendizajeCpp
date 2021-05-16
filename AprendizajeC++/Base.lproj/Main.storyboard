@@ -491,6 +491,9 @@
                         <color key="backgroundColor" red="0.92294460540000001" green="0.64368408919999998" blue="0.23515629769999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="k09-EI-kpc"/>
+                    <connections>
+                        <outlet property="lbPuntos" destination="mDh-bh-Qm9" id="87I-wf-VL4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Es-pQ-JA9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -630,8 +633,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="gv3-36-17W"/>
-        <segue reference="QiR-jx-xTh"/>
+        <segue reference="Ogd-75-oUp"/>
+        <segue reference="MRU-mL-5tg"/>
         <segue reference="z2b-Av-uTU"/>
         <segue reference="sDT-Cf-ovd"/>
         <segue reference="reF-H5-3J4"/>
