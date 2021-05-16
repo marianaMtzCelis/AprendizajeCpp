@@ -22,6 +22,9 @@ class FrutasScene: SKScene {
     
     var lbPuntos = SKLabelNode()
     var lbVidas = SKLabelNode()
+    var label1 = SKLabelNode()
+    var label2 = SKLabelNode()
+    var label3 = SKLabelNode()
     
     var fruitThrowTimer = Timer()
     
@@ -92,6 +95,13 @@ class FrutasScene: SKScene {
         vidas = 3
         lbPuntos.text = "\(puntos)"
         lbVidas.text = "\(vidas)"
+        
+        label1 = childNode(withName: "lb1") as! SKLabelNode
+        label1.text = "Corta las frutas"
+        label2 = childNode(withName: "lb2") as! SKLabelNode
+        label2.text = "que contengan una"
+        label3 = childNode(withName: "lb3") as! SKLabelNode
+        label3.text = "palabra reservada"
         
         fruitThrowTimer = Timer.scheduledTimer(withTimeInterval:3.0, repeats: true, block: {_ in self.createFruits()})
         
