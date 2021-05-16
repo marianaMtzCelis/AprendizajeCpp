@@ -554,7 +554,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="Z6X-nd-iG6" kind="show" identifier="finGlobosMeuSegue" id="A6R-r9-EIH"/>
+                                    <action selector="volverAlMenu:" destination="aLl-Ej-j7f" eventType="touchUpInside" id="if1-VV-cev"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Puntos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cza-EY-mCf">
@@ -633,10 +633,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="A1R-kh-rw6"/>
+        <segue reference="NqQ-MN-cvp"/>
         <segue reference="z2b-Av-uTU"/>
-        <segue reference="sDT-Cf-ovd"/>
-        <segue reference="reF-H5-3J4"/>
+        <segue reference="BIW-dB-RFe"/>
+        <segue reference="9r9-vy-Jsh"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="botonCiclos" width="444" height="864"/>
