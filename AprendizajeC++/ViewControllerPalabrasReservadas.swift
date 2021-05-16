@@ -22,6 +22,9 @@ class ViewControllerPalabrasReservadas: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewControllerPalabrasReservadas.doaSegue), name: NSNotification.Name(rawValue: "doaSegue"), object: nil)
+
 
         // Load fruit data (list of DatosFruta)
         let rutaDatosFruta = Bundle.main.path(forResource: "listaPalabras", ofType: "json")!
@@ -44,5 +47,11 @@ class ViewControllerPalabrasReservadas: UIViewController {
             
         }
     }
+    
+    @objc func doaSegue(){
+           performSegue(withIdentifier: "frutasFinSegue", sender: self)
+           self.view.removeFromSuperview()
+           self.view = nil
+       }
 
 }

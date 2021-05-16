@@ -22,12 +22,18 @@ class FrutasScene: SKScene {
     
     var lbPuntos = SKLabelNode()
     var lbVidas = SKLabelNode()
+    var label1 = SKLabelNode()
+    var label2 = SKLabelNode()
+    var label3 = SKLabelNode()
     
     var fruitThrowTimer = Timer()
     
     var explodeOverlay = SKShapeNode()
     
     override func didMove(to view: SKView) {
+        
+        let app = UIApplication.shared
+        NotificationCenter.default.addObserver(self, selector: #selector(guardaDatosInterfaz), name: UIApplication.didEnterBackgroundNotification, object: app)
         
         lbPuntos = childNode(withName: "lbPuntos") as! SKLabelNode
         lbPuntos.text = "\(puntos)"
@@ -93,6 +99,13 @@ class FrutasScene: SKScene {
         lbPuntos.text = "\(puntos)"
         lbVidas.text = "\(vidas)"
         
+        label1 = childNode(withName: "lb1") as! SKLabelNode
+        label1.text = "Corta las frutas"
+        label2 = childNode(withName: "lb2") as! SKLabelNode
+        label2.text = "que contengan una"
+        label3 = childNode(withName: "lb3") as! SKLabelNode
+        label3.text = "palabra reservada"
+        
         fruitThrowTimer = Timer.scheduledTimer(withTimeInterval:3.0, repeats: true, block: {_ in self.createFruits()})
         
     }
@@ -116,11 +129,11 @@ class FrutasScene: SKScene {
             fruit.physicsBody?.angularVelocity = randomCGFloat(-5, 5)
             
             if fruit.position.x < size.width/2 {
-                fruit.physicsBody?.velocity.dx = randomCGFloat(0, 200)
+                fruit.physicsBody?.velocity.dx = randomCGFloat(0, 50)
             }
             
             if fruit.position.x > size.width/2 {
-                fruit.physicsBody?.velocity.dx = randomCGFloat(0, -200)
+                fruit.physicsBody?.velocity.dx = randomCGFloat(0, -50)
             }
             
         }
@@ -158,8 +171,11 @@ class FrutasScene: SKScene {
         fruitThrowTimer.invalidate()
         
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false, block: {_ in self.gamePhase = .Ready})
-        // segue a fin de juego
         
+        guardaDatosInterfaz()
+        
+        // segue a fin de juego
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "doaSegue"), object: nil)
         
     }
     
@@ -168,6 +184,12 @@ class FrutasScene: SKScene {
         let emitter = SKEmitterNode(fileNamed: "Explode.sks")
         emitter?.position = position
         addChild(emitter!)
+    }
+    
+    @IBAction func guardaDatosInterfaz() {
+        
+        let defaults = UserDefaults.standard
+        defaults.set(puntos, forKey: "puntosFrutitas")
     }
 
 }
