@@ -158,7 +158,10 @@ class FrutasScene: SKScene {
         fruitThrowTimer.invalidate()
         
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false, block: {_ in self.gamePhase = .Ready})
+        
         // segue a fin de juego
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "doaSegue"), object: nil)
+
         
         
     }
