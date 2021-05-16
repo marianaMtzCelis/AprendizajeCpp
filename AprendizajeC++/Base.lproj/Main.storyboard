@@ -443,7 +443,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="9O8-oI-3mZ" kind="show" identifier="finFrutasSegue" id="MRU-mL-5tg"/>
+                                    <action selector="volverAJugar:" destination="yqm-NB-HUF" eventType="touchUpInside" id="BEr-cJ-xh2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pBQ-fb-bKH">
@@ -462,7 +462,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="Z6X-nd-iG6" kind="show" identifier="finFrutasMenuSegue" id="Ogd-75-oUp"/>
+                                    <action selector="volverAMenu:" destination="yqm-NB-HUF" eventType="touchUpInside" id="kA8-tP-GE8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fin del Juego" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cet-Ia-2da">
@@ -633,8 +633,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ogd-75-oUp"/>
-        <segue reference="MRU-mL-5tg"/>
+        <segue reference="A1R-kh-rw6"/>
         <segue reference="z2b-Av-uTU"/>
         <segue reference="sDT-Cf-ovd"/>
         <segue reference="reF-H5-3J4"/>

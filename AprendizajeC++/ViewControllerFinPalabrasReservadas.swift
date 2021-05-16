@@ -17,20 +17,16 @@ class ViewControllerFinPalabrasReservadas: UIViewController {
         actualizaInterfaz()
     }
     
+    
+    @IBAction func volverAMenu(_ sender: Any) {
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
 
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "volverFrutasSegue" {
-            
-            let viewFrutas = segue.destination as! ViewControllerPalabrasReservadas
-            
-        } else if segue.identifier == "finFrutasMenuSegue" {
-            
-            let viewMenu = segue.destination as! ViewControllerMenu
-            
-        }
     }
+    
+    @IBAction func volverAJugar(_ sender: Any) {
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
+    }
+    
     
     func actualizaInterfaz() {
         
