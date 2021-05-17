@@ -7,14 +7,22 @@
 
 import UIKit
 
-class ViewControllerCiclos: UIViewController {
+class ViewControllerCiclos: UIViewController, UITextFieldDelegate {
 
     var listaDatosCiclo : [DatosCiclo]!
     var listaTextBoxIncognitas : [UITextField]!
     var iIncognitas : Int!
+    var puntos : Int!
+    var intentos : Int!
+//    var activeField : UITextField!
+    
     @IBOutlet weak var VStackPreguntas: UIStackView!
     @IBOutlet weak var ImagenCiclo: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var botonEvaluar: UIButton!
+    @IBOutlet weak var scrollViewCompleta: UIScrollView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Load ciclos data (list of DatosCiclo)
@@ -26,6 +34,16 @@ class ViewControllerCiclos: UIViewController {
         } catch {
             print("Error al cargar el archivo listaCiclos.json")
         }
+        // Se hace aleatorio el orden de las preguntas
+        listaDatosCiclo.shuffle()
+        
+        puntos = 0
+        intentos = 0
+        
+        self.registrarseParaNotificacionesDeTeclado()
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(quitaTeclado))
+        self.view.addGestureRecognizer(tap)
         
         // Setup scrollview
         scrollView.minimumZoomScale = 1
@@ -34,10 +52,55 @@ class ViewControllerCiclos: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        actualizarPregunta()
+    }
+    
+    // MARK: - Manipular el teclado
+    func registrarseParaNotificacionesDeTeclado() {
+        NotificationCenter.default.addObserver(self, selector: #selector(tecladoSeMostro(aNotification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(tecladoSeOculto(aNotification:)), name: UIResponder.keyboardWillHideNotification , object: nil)
+    }
+    
+    @IBAction func tecladoSeMostro(aNotification: NSNotification) {
+        let kbSize = (aNotification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as AnyObject).cgRectValue.size
+        
+        let contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: kbSize.height, right: 0.0)
+        scrollViewCompleta.contentInset = contentInset
+        scrollViewCompleta.scrollIndicatorInsets = contentInset
+        
+        scrollViewCompleta.setContentOffset(CGPoint(x: 0.0, y: botonEvaluar.frame.origin.y - kbSize.height), animated: true)
+        
+    }
+    
+    @IBAction func tecladoSeOculto(aNotification: NSNotification) {
+        let contentInset = UIEdgeInsets.zero
+        scrollViewCompleta.contentInset = contentInset
+        scrollViewCompleta.scrollIndicatorInsets = contentInset
+        
+        scrollViewCompleta.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
+
+    }
+    
+    @IBAction func quitaTeclado() {
+        view.endEditing(true)
+    }
+    
+//    func textFieldDidBeginEditing(_ textField: UITextField) {
+//        activeField = textField
+//    }
+//
+//    func textFieldDidEndEditing(_ textField: UITextField) {
+//        activeField = nil
+//    }
+    
+    // MARK: - Mostrar preguntas
+    func actualizarPregunta() {
         // Initialize textbox list
+        VStackPreguntas.arrangedSubviews.forEach { subview in
+            subview.removeFromSuperview()
+        }
         listaTextBoxIncognitas = [UITextField]()
-        let indice = Int.random(in: 0..<listaDatosCiclo.count)
-        mostrarCiclo(indiceCiclo: indice)
+        mostrarCiclo(indiceCiclo: intentos)
     }
     
     func mostrarCiclo(indiceCiclo: Int) {
@@ -63,18 +126,77 @@ class ViewControllerCiclos: UIViewController {
             VStackPreguntas.addArrangedSubview(HStack)
         }
     }
-
+    
+    // MARK: - Evaluar preguntas
+    @IBAction func evaluar(_ sender: UIButton) {
+        if (checaBoxesVacio()) {
+            let alert = UIAlertController(title: "Error", message: "Alguna de las cajas de texto esta vacia", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alert.addAction(action)
+            present(alert, animated: true, completion: nil)
+            return
+        }
+        
+        var incorrectas = [String]()
+        for i in 0..<iIncognitas {
+            let answer = listaTextBoxIncognitas[i].text!
+            if (answer.lowercased() != listaDatosCiclo[intentos].respuestas[i]) {
+                incorrectas.append(listaDatosCiclo[intentos].incognitas[i])
+            }
+        }
+        
+        var titulo = "Felicidades"
+        var mensaje = "No tuviste errores"
+        
+        if !incorrectas.isEmpty {
+            titulo = "Oh no"
+            mensaje = "Tus errores fueron: "
+            incorrectas.forEach { word in
+                mensaje.append(word + " ")
+            }
+        } else {
+            puntos += 20
+        }
+        
+        intentos += 1
+        
+        let alert = UIAlertController(title: titulo, message: mensaje, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .cancel, handler: alertHander)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func alertHander(action : UIAlertAction) {
+        if intentos < 5 {
+            actualizarPregunta()
+        } else {
+            performSegue(withIdentifier: "ciclosFinSegue", sender: nil)
+        }
+    }
+    
+    // Regresa true si hay una caja con input vacio
+    func checaBoxesVacio()-> Bool {
+        var b = false
+        listaTextBoxIncognitas.forEach { box in
+            if box.text == "" {
+                b = true
+            }
+        }
+        return b
+    }
+    
+    
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "ciclosFinSegue" {
-            
             let viewFinCiclos = segue.destination as! ViewControllerFinCiclos
-            
+            viewFinCiclos.puntos = puntos
         }
     }
 }
 
+// MARK: - Pinch2Zoom
 extension ViewControllerCiclos : UIScrollViewDelegate {
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return ImagenCiclo

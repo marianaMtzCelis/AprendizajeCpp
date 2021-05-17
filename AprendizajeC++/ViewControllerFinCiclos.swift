@@ -8,11 +8,15 @@
 import UIKit
 
 class ViewControllerFinCiclos: UIViewController {
-
+    
+    @IBOutlet weak var lblpts: UILabel!
+    var puntos = 0
+    @IBOutlet weak var tlPuntos: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        lblpts.text = String(puntos)
     }
     
 

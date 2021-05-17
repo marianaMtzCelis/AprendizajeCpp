@@ -203,13 +203,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Escribe en cada espacio la respuesta correspondiente" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orK-V4-wwa">
-                                <rect key="frame" x="44" y="58" width="286" height="81"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XY3-JV-V5W">
+                                <rect key="frame" x="1" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uWN-J5-xlJ">
+                                        <rect key="frame" x="121" y="453" width="132" height="127"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yb-SW-aIc">
+                                        <rect key="frame" x="154" y="617" width="67" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Evaluar">
+                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="evaluar:" destination="mLS-Hc-gVQ" eventType="touchUpInside" id="vqr-KE-BNm"/>
+                                        </connections>
+                                    </button>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rFI-Fw-N6Z">
+                                        <rect key="frame" x="0.0" y="134" width="375" height="311"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="peM-Cf-yS2">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="311"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="GsS-qV-02h"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="gyg-eD-sVv"/>
+                                    </scrollView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Escribe en cada espacio la respuesta correspondiente" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orK-V4-wwa">
+                                        <rect key="frame" x="44" y="56" width="286" height="81"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="JcK-6w-uZd"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="lhd-7c-zUw"/>
+                            </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxv-9p-r1U">
                                 <rect key="frame" x="322" y="20" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -218,30 +253,6 @@
                                     <segue destination="aLl-Ej-j7f" kind="show" identifier="ciclosFinSegue" id="zC6-Iq-W3S"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uWN-J5-xlJ">
-                                <rect key="frame" x="122" y="452" width="132" height="127"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yb-SW-aIc">
-                                <rect key="frame" x="154" y="617" width="67" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Evaluar">
-                                    <color key="titleColor" systemColor="systemGray6Color"/>
-                                </state>
-                            </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rFI-Fw-N6Z">
-                                <rect key="frame" x="0.0" y="133" width="375" height="311"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="peM-Cf-yS2">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="311"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <viewLayoutGuide key="contentLayoutGuide" id="GsS-qV-02h"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="gyg-eD-sVv"/>
-                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zKJ-m4-ufA"/>
                         <color key="backgroundColor" red="0.58164483310000004" green="0.4763759971" blue="0.74120402340000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -250,7 +261,9 @@
                     <connections>
                         <outlet property="ImagenCiclo" destination="peM-Cf-yS2" id="5Mv-Yb-q1A"/>
                         <outlet property="VStackPreguntas" destination="uWN-J5-xlJ" id="eeh-34-GTS"/>
+                        <outlet property="botonEvaluar" destination="3Yb-SW-aIc" id="khD-ny-QpS"/>
                         <outlet property="scrollView" destination="rFI-Fw-N6Z" id="QlQ-nf-Pv3"/>
+                        <outlet property="scrollViewCompleta" destination="XY3-JV-V5W" id="K0O-Qc-23l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1gi-lo-foj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -265,15 +278,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Juego Condicionales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQ5-jK-oOh">
-                                <rect key="frame" x="108" y="91" width="159" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bc9-p0-hEG">
-                                <rect key="frame" x="172" y="167" width="30" height="30"/>
+                                <rect key="frame" x="316" y="20" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Fin">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -282,6 +288,20 @@
                                     <segue destination="Q9P-4o-uWs" kind="show" identifier="condicionalesFinSegue" id="3G0-fe-Vsd"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¿Qué se imprimiría en consola?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQ5-jK-oOh">
+                                <rect key="frame" x="69" y="91" width="236" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPO-Dd-FGU">
+                                <rect key="frame" x="69" y="159" width="223" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7M2-VF-6TT"/>
                         <color key="backgroundColor" red="0.084321506320000003" green="0.54212832450000004" blue="0.83925014730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -290,7 +310,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fDP-dM-SqF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="804" y="1085"/>
+            <point key="canvasLocation" x="804" y="1084.4077961019491"/>
         </scene>
         <!--View Controller Fin Condicionales-->
         <scene sceneID="WWj-fw-c3r">
@@ -573,10 +593,14 @@
                         <color key="backgroundColor" red="0.58164483310000004" green="0.4763759971" blue="0.74120402340000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="poN-1g-74y"/>
+                    <connections>
+                        <outlet property="lblpts" destination="PyZ-zX-fF7" id="ap4-9c-Ilx"/>
+                        <outlet property="tlPuntos" destination="PyZ-zX-fF7" id="Xep-vL-MYB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jXA-c5-jKC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3524" y="83"/>
+            <point key="canvasLocation" x="3524" y="82.3088455772114"/>
         </scene>
         <!--View Controller Menu-->
         <scene sceneID="UwR-wZ-oke">
@@ -634,7 +658,7 @@
         <segue reference="A6R-r9-EIH"/>
         <segue reference="QiR-jx-xTh"/>
         <segue reference="z2b-Av-uTU"/>
-        <segue reference="sDT-Cf-ovd"/>
+        <segue reference="BIW-dB-RFe"/>
         <segue reference="reF-H5-3J4"/>
     </inferredMetricsTieBreakers>
     <resources>
