@@ -160,7 +160,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="1Cd-os-3XH" kind="show" identifier="volverGlobosSegue" id="9r9-vy-Jsh"/>
+                                    <action selector="volverAJugar:" destination="uiJ-LB-4lf" eventType="touchUpInside" id="9bd-XQ-hHQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wVS-KM-l3k">
@@ -179,7 +179,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="Z6X-nd-iG6" kind="show" identifier="finGlobosMenuSegue" id="NqQ-MN-cvp"/>
+                                    <action selector="volverAlMenu:" destination="uiJ-LB-4lf" eventType="touchUpInside" id="jyb-Zj-nSB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -633,9 +633,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="NqQ-MN-cvp"/>
         <segue reference="BIW-dB-RFe"/>
-        <segue reference="9r9-vy-Jsh"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="botonCiclos" width="444" height="864"/>
