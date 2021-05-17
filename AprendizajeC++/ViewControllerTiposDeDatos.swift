@@ -62,7 +62,16 @@ class ViewControllerTiposDeDatos: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        dissapearAllBalloons()
         timerJuego?.invalidate()
+    }
+    
+    @objc fileprivate func dissapearAllBalloons() {
+        for v in view.subviews {
+            if let balloonImageView = v as? UIImageView {
+                balloonImageView.removeFromSuperview()
+            }
+        }
     }
     
     @objc fileprivate func createBalloons() {
