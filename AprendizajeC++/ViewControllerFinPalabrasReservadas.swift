@@ -8,26 +8,35 @@
 import UIKit
 
 class ViewControllerFinPalabrasReservadas: UIViewController {
-
+    
+    @IBOutlet weak var lbPuntos: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        actualizaInterfaz()
     }
     
-
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    @IBAction func volverAMenu(_ sender: Any) {
+        if let first = presentingViewController,
+            let second = first.presentingViewController{
+                first.view.isHidden = true
+                second.dismiss(animated: true)
+            }
+    }
+    
+    @IBAction func volverAJugar(_ sender: Any) {
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    func actualizaInterfaz() {
         
-        if segue.identifier == "volverFrutasSegue" {
-            
-            let viewFrutas = segue.destination as! ViewControllerPalabrasReservadas
-            
-        } else if segue.identifier == "finFrutasMenuSegue" {
-            
-            let viewMenu = segue.destination as! ViewControllerMenu
-            
-        }
+        let defaults = UserDefaults.standard
+        let puntos = defaults.integer(forKey: "puntosFrutitas")
+        lbPuntos.text = String(puntos)
+        
     }
 
 }

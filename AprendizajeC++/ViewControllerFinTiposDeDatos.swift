@@ -19,19 +19,18 @@ class ViewControllerFinTiposDeDatos: UIViewController {
         lbPts.text = String(pts)
     }
     
-
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "volverGlobosSegue" {
-            
-            let viewGlobos = segue.destination as! ViewControllerTiposDeDatos
-            
-        } else if segue.identifier == "finGlobosMenuSegue" {
-            
-            let viewMenu = segue.destination as! ViewControllerMenu
-            
-        }
+    
+    @IBAction func volverAlMenu(_ sender: Any) {
+        if let first = presentingViewController,
+            let second = first.presentingViewController{
+                first.view.isHidden = true
+                second.dismiss(animated: true)
+            }
     }
-
+    
+    @IBAction func volverAJugar(_ sender: Any) {
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
+    }
+    
+    
 }

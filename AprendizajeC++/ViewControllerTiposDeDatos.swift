@@ -13,8 +13,8 @@ class ViewControllerTiposDeDatos: UIViewController {
     var listaTiposDeDatos : [String]!
     var timerJuego : Timer?
     var tipoDeDatoPartida : String = ""
-    var puntos : Int = 0
-    var vidas : Int = 3
+    var puntos : Int!
+    var vidas : Int!
     
     @IBOutlet weak var labelPuntos: UILabel!
     @IBOutlet weak var labelVidas: UILabel!
@@ -43,11 +43,16 @@ class ViewControllerTiposDeDatos: UIViewController {
             print("Error al cargar el archivo tiposDeDatos.json")
         }
         
-        tipoDeDatoPartida = listaTiposDeDatos.randomElement()!
-        
-        tituloJuego.text = tipoDeDatoPartida.uppercased()
-        
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTapBalloon)))
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tipoDeDatoPartida = listaTiposDeDatos.randomElement()!
+        tituloJuego.text = tipoDeDatoPartida.uppercased()
+        puntos = 0
+        vidas = 3
+        labelPuntos.text = "Puntos: " + String(puntos)
+        labelVidas.text = "Vidas: " + String(vidas)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -57,7 +62,16 @@ class ViewControllerTiposDeDatos: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        dissapearAllBalloons()
         timerJuego?.invalidate()
+    }
+    
+    @objc fileprivate func dissapearAllBalloons() {
+        for v in view.subviews {
+            if let balloonImageView = v as? UIImageView {
+                balloonImageView.removeFromSuperview()
+            }
+        }
     }
     
     @objc fileprivate func createBalloons() {
