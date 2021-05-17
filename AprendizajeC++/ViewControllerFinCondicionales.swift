@@ -17,7 +17,11 @@ class ViewControllerFinCondicionales: UIViewController {
     
     
     @IBAction func volverAlMenu(_ sender: Any) {
-        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+        if let first = presentingViewController,
+            let second = first.presentingViewController{
+                first.view.isHidden = true
+                second.dismiss(animated: true)
+            }
     }
     
     @IBAction func volverAJugar(_ sender: Any) {
