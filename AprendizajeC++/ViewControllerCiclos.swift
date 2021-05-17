@@ -34,11 +34,6 @@ class ViewControllerCiclos: UIViewController, UITextFieldDelegate {
         } catch {
             print("Error al cargar el archivo listaCiclos.json")
         }
-        // Se hace aleatorio el orden de las preguntas
-        listaDatosCiclo.shuffle()
-        
-        puntos = 0
-        intentos = 0
         
         self.registrarseParaNotificacionesDeTeclado()
         
@@ -52,6 +47,11 @@ class ViewControllerCiclos: UIViewController, UITextFieldDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        // Se hace aleatorio el orden de las preguntas
+        listaDatosCiclo.shuffle()
+        
+        puntos = 0
+        intentos = 0
         actualizarPregunta()
     }
     
