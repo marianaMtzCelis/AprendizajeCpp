@@ -636,31 +636,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkQ-sf-ocH">
-                                <rect key="frame" x="29" y="42" width="153" height="296"/>
-                                <state key="normal" image="botonTipoDeDatos"/>
-                                <connections>
-                                    <segue destination="1Cd-os-3XH" kind="show" identifier="menuGlobosSegue" id="reF-H5-3J4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uF0-fY-1d9">
-                                <rect key="frame" x="199" y="42" width="151" height="295"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uF0-fY-1d9">
+                                <rect key="frame" x="196.5" y="42" width="150.5" height="294.5"/>
                                 <state key="normal" image="botonCiclos"/>
                                 <connections>
                                     <segue destination="mLS-Hc-gVQ" kind="show" identifier="menuCiclosSegue" id="sDT-Cf-ovd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pip-Zy-LyR">
-                                <rect key="frame" x="29" y="351" width="150" height="294"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pip-Zy-LyR">
+                                <rect key="frame" x="29" y="349.5" width="150.5" height="294.5"/>
                                 <state key="normal" image="botonCondicionales"/>
                                 <connections>
                                     <segue destination="fct-3z-qm8" kind="show" identifier="menuCondicionalesSegue" id="z2b-Av-uTU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYd-zo-T0k">
-                                <rect key="frame" x="199" y="351" width="151" height="294"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkQ-sf-ocH">
+                                <rect key="frame" x="29" y="42" width="150.5" height="294.5"/>
+                                <state key="normal" image="botonTipoDeDatos"/>
+                                <connections>
+                                    <segue destination="1Cd-os-3XH" kind="show" identifier="menuGlobosSegue" id="reF-H5-3J4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="247" verticalHuggingPriority="247" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYd-zo-T0k">
+                                <rect key="frame" x="199.5" y="350.5" width="150.5" height="294.5"/>
                                 <state key="normal" image="botonPalabrasReservadas"/>
                                 <connections>
                                     <segue destination="9O8-oI-3mZ" kind="show" identifier="menuFrutasSegue" id="QiR-jx-xTh"/>
@@ -670,9 +668,28 @@
                         <viewLayoutGuide key="safeArea" id="Y5m-6a-cmv"/>
                         <color key="backgroundColor" red="0.068996302780000004" green="0.13895529509999999" blue="0.2353050411" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="KkQ-sf-ocH" firstAttribute="leading" secondItem="Y5m-6a-cmv" secondAttribute="leading" constant="29" id="flc-wW-2Ne"/>
-                            <constraint firstItem="KkQ-sf-ocH" firstAttribute="top" secondItem="Y5m-6a-cmv" secondAttribute="top" constant="42" id="fyN-3S-DXg"/>
-                            <constraint firstItem="Pip-Zy-LyR" firstAttribute="top" secondItem="KkQ-sf-ocH" secondAttribute="bottom" constant="13" id="oIz-5p-thR"/>
+                            <constraint firstItem="Pip-Zy-LyR" firstAttribute="width" secondItem="KkQ-sf-ocH" secondAttribute="width" id="2EN-Lp-zjC"/>
+                            <constraint firstItem="hYd-zo-T0k" firstAttribute="leading" secondItem="Pip-Zy-LyR" secondAttribute="trailing" constant="20" id="616-AN-g3k"/>
+                            <constraint firstItem="Y5m-6a-cmv" firstAttribute="trailing" secondItem="hYd-zo-T0k" secondAttribute="trailing" constant="25" id="851-Kb-Sb7"/>
+                            <constraint firstItem="Pip-Zy-LyR" firstAttribute="height" secondItem="KkQ-sf-ocH" secondAttribute="height" id="8Cs-2I-5iJ"/>
+                            <constraint firstItem="hYd-zo-T0k" firstAttribute="top" secondItem="uF0-fY-1d9" secondAttribute="bottom" constant="14" id="AHF-pD-JgU"/>
+                            <constraint firstItem="Pip-Zy-LyR" firstAttribute="leading" secondItem="Y5m-6a-cmv" secondAttribute="leading" constant="29" id="AXs-QH-45O"/>
+                            <constraint firstItem="hYd-zo-T0k" firstAttribute="top" secondItem="uF0-fY-1d9" secondAttribute="bottom" constant="14" id="Awt-IP-Wom"/>
+                            <constraint firstItem="uF0-fY-1d9" firstAttribute="leading" secondItem="KkQ-sf-ocH" secondAttribute="trailing" constant="17" id="Dpy-sw-UcW"/>
+                            <constraint firstItem="hYd-zo-T0k" firstAttribute="height" secondItem="KkQ-sf-ocH" secondAttribute="height" id="Dyk-Vx-QTl"/>
+                            <constraint firstItem="Y5m-6a-cmv" firstAttribute="bottom" secondItem="hYd-zo-T0k" secondAttribute="bottom" constant="22" id="HkG-s5-asK"/>
+                            <constraint firstItem="KkQ-sf-ocH" firstAttribute="leading" secondItem="Y5m-6a-cmv" secondAttribute="leading" constant="29" id="IrC-A1-jw1"/>
+                            <constraint firstItem="uF0-fY-1d9" firstAttribute="width" secondItem="KkQ-sf-ocH" secondAttribute="width" id="KIk-vy-lK5"/>
+                            <constraint firstItem="Y5m-6a-cmv" firstAttribute="trailing" secondItem="uF0-fY-1d9" secondAttribute="trailing" constant="28" id="KRq-xb-2np"/>
+                            <constraint firstItem="hYd-zo-T0k" firstAttribute="leading" secondItem="Pip-Zy-LyR" secondAttribute="trailing" constant="20" id="PTJ-HV-hS1"/>
+                            <constraint firstItem="uF0-fY-1d9" firstAttribute="height" secondItem="KkQ-sf-ocH" secondAttribute="height" id="Qof-q9-hO4"/>
+                            <constraint firstItem="uF0-fY-1d9" firstAttribute="leading" secondItem="KkQ-sf-ocH" secondAttribute="trailing" constant="17" id="aZZ-g1-AyU"/>
+                            <constraint firstItem="Pip-Zy-LyR" firstAttribute="top" secondItem="KkQ-sf-ocH" secondAttribute="bottom" constant="13" id="dZ2-l4-D5Q"/>
+                            <constraint firstItem="Pip-Zy-LyR" firstAttribute="top" secondItem="KkQ-sf-ocH" secondAttribute="bottom" constant="13" id="gZQ-aE-xpG"/>
+                            <constraint firstItem="uF0-fY-1d9" firstAttribute="top" secondItem="Y5m-6a-cmv" secondAttribute="top" constant="42" id="hUD-Ij-xWF"/>
+                            <constraint firstItem="Y5m-6a-cmv" firstAttribute="bottom" secondItem="Pip-Zy-LyR" secondAttribute="bottom" constant="23" id="opj-eF-yJI"/>
+                            <constraint firstItem="hYd-zo-T0k" firstAttribute="width" secondItem="KkQ-sf-ocH" secondAttribute="width" id="qKO-HD-3DJ"/>
+                            <constraint firstItem="KkQ-sf-ocH" firstAttribute="top" secondItem="Y5m-6a-cmv" secondAttribute="top" constant="42" id="ufW-Ra-3z7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mZr-MX-ADG"/>
