@@ -551,10 +551,10 @@
                         <viewLayoutGuide key="safeArea" id="05q-uQ-4tO"/>
                         <color key="backgroundColor" red="0.92294460540000001" green="0.64368408919999998" blue="0.23515629769999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="SWz-sB-XLq" firstAttribute="leading" secondItem="05q-uQ-4tO" secondAttribute="leading" id="GZ8-a1-FMo"/>
-                            <constraint firstItem="SWz-sB-XLq" firstAttribute="trailing" secondItem="05q-uQ-4tO" secondAttribute="trailing" id="L6k-3q-LVo"/>
-                            <constraint firstItem="SWz-sB-XLq" firstAttribute="top" secondItem="05q-uQ-4tO" secondAttribute="top" id="Rxb-Dq-8vC"/>
-                            <constraint firstItem="SWz-sB-XLq" firstAttribute="bottom" secondItem="05q-uQ-4tO" secondAttribute="bottom" id="htG-5p-l9h"/>
+                            <constraint firstItem="SWz-sB-XLq" firstAttribute="trailing" secondItem="05q-uQ-4tO" secondAttribute="trailing" id="34f-g5-adq"/>
+                            <constraint firstItem="SWz-sB-XLq" firstAttribute="top" secondItem="05q-uQ-4tO" secondAttribute="top" id="Cwb-qI-CwH"/>
+                            <constraint firstItem="SWz-sB-XLq" firstAttribute="bottom" secondItem="05q-uQ-4tO" secondAttribute="bottom" id="G7f-N2-6kS"/>
+                            <constraint firstItem="SWz-sB-XLq" firstAttribute="leading" secondItem="05q-uQ-4tO" secondAttribute="leading" id="hAA-0U-aIc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bvH-dX-RXP"/>
