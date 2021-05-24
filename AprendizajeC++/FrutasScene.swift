@@ -113,15 +113,13 @@ class FrutasScene: SKScene {
     
     func createFruits() {
         
-        print("fruits")
-        
         let numberOfFruits = 1 + Int(arc4random_uniform(UInt32(4)))
         
         for _ in 0..<numberOfFruits {
             
             let fruit = Fruta()
             
-            fruit.position.x = randomCGFloat(5, 300)
+            fruit.position.x = randomCGFloat(0, size.width)
             fruit.position.y = -100
             addChild(fruit)
             fruit.zPosition = 1
