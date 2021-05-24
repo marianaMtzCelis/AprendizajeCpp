@@ -36,7 +36,10 @@ class FrutasScene: SKScene {
         let app = UIApplication.shared
         NotificationCenter.default.addObserver(self, selector: #selector(guardaDatosInterfaz), name: UIApplication.didEnterBackgroundNotification, object: app)
         
+        // AJUSTAR TAMAÑOS SEGUN EL DEVICE
         lbPuntos = childNode(withName: "lbPuntos") as! SKLabelNode
+        print(self.view?.frame.height)
+        lbPuntos.position = CGPoint(x:(self.view?.frame.width)!/3.0, y:(self.view?.frame.height)!/0.85)
         lbPuntos.text = "\(puntos)"
         lbVidas = childNode(withName: "lbVidas") as! SKLabelNode
         lbVidas.text = "\(vidas)"
