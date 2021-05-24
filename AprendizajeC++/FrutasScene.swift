@@ -31,8 +31,7 @@ class FrutasScene: SKScene {
     var explodeOverlay = SKShapeNode()
     
     override func didMove(to view: SKView) {
-        print(size.width)
-        print(size.height)
+        size = CGSize(width: 1242, height: 2208)
         
         let app = UIApplication.shared
         NotificationCenter.default.addObserver(self, selector: #selector(guardaDatosInterfaz), name: UIApplication.didEnterBackgroundNotification, object: app)

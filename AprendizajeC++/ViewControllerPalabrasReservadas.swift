@@ -16,21 +16,16 @@ class ViewControllerPalabrasReservadas: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if let frutasScene = SKScene(fileNamed: "FrutasScene") {
-            frutasScene.size = self.skView.bounds.size
-            frutasScene.scaleMode = .resizeFill
+            frutasScene.scaleMode = .aspectFill
             skView.presentScene(frutasScene)
         }
     }
     
     override func viewDidLoad() {
-        
         skView.leadingAnchor.constraint(equalTo: skView.leadingAnchor).isActive = true
         skView.trailingAnchor.constraint(equalTo: skView.trailingAnchor).isActive = true
         skView.topAnchor.constraint(equalTo: skView.topAnchor).isActive = true
         skView.bottomAnchor.constraint(equalTo: skView.bottomAnchor).isActive = true
-        
-        print(skView.frame.width)
-        print(skView.frame.size.height)
         
         super.viewDidLoad()
         

@@ -549,7 +549,7 @@
                             </skView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="05q-uQ-4tO"/>
-                        <color key="backgroundColor" red="0.92294460540000001" green="0.64368408919999998" blue="0.23515629769999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.96973985429999998" green="0.63243484500000002" blue="0.050350897009999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="SWz-sB-XLq" firstAttribute="trailing" secondItem="05q-uQ-4tO" secondAttribute="trailing" id="34f-g5-adq"/>
                             <constraint firstItem="SWz-sB-XLq" firstAttribute="top" secondItem="05q-uQ-4tO" secondAttribute="top" id="Cwb-qI-CwH"/>
