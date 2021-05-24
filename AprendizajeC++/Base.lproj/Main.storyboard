@@ -696,6 +696,13 @@
                                 <color key="textColor" red="0.2250880301" green="0.14519220590000001" blue="0.38825637099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loopFinal" translatesAutoresizingMaskIntoConstraints="NO" id="Idz-8j-dpU">
+                                <rect key="frame" x="230" y="502" width="109" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="Bgu-eo-Toy"/>
+                                    <constraint firstAttribute="height" constant="129" id="RIX-Rw-sdx"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gdi-Lc-sE4"/>
                         <color key="backgroundColor" red="0.58164483310000004" green="0.4763759971" blue="0.74120402340000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -713,8 +720,11 @@
                             <constraint firstItem="iST-wU-4Pz" firstAttribute="top" secondItem="PyZ-zX-fF7" secondAttribute="bottom" constant="25" id="JUJ-aD-nbh"/>
                             <constraint firstItem="iST-wU-4Pz" firstAttribute="leading" secondItem="h5T-pC-x53" secondAttribute="trailing" constant="20" id="QcC-Aj-0Uf"/>
                             <constraint firstItem="Gdi-Lc-sE4" firstAttribute="trailing" secondItem="lIa-HU-sq4" secondAttribute="trailing" constant="87" id="SYF-gy-igm"/>
+                            <constraint firstItem="Gdi-Lc-sE4" firstAttribute="bottom" secondItem="Idz-8j-dpU" secondAttribute="bottom" constant="43" id="VCY-y3-GAv"/>
                             <constraint firstItem="lIa-HU-sq4" firstAttribute="top" secondItem="Gdi-Lc-sE4" secondAttribute="top" constant="84" id="Vxh-if-h8w"/>
                             <constraint firstItem="iST-wU-4Pz" firstAttribute="height" secondItem="h5T-pC-x53" secondAttribute="height" id="WLT-rD-cKl"/>
+                            <constraint firstItem="Gdi-Lc-sE4" firstAttribute="trailing" secondItem="Idz-8j-dpU" secondAttribute="trailing" constant="36" id="YuX-dD-ESb"/>
+                            <constraint firstItem="Idz-8j-dpU" firstAttribute="top" secondItem="iST-wU-4Pz" secondAttribute="bottom" constant="74" id="a7Q-ea-yeX"/>
                             <constraint firstItem="PyZ-zX-fF7" firstAttribute="leading" secondItem="cza-EY-mCf" secondAttribute="trailing" constant="22" id="cMz-1K-iP4"/>
                             <constraint firstItem="cza-EY-mCf" firstAttribute="top" secondItem="lIa-HU-sq4" secondAttribute="bottom" constant="15" id="dy6-fI-ifz"/>
                             <constraint firstItem="v5j-RQ-kMI" firstAttribute="leading" secondItem="Gdi-Lc-sE4" secondAttribute="leading" constant="35" id="hW2-5W-rh9"/>
@@ -816,6 +826,7 @@
         <image name="botonTipoDeDatos" width="450" height="866"/>
         <image name="carnivalGirl" width="1080" height="1080"/>
         <image name="globoFinal" width="170" height="383"/>
+        <image name="loopFinal" width="379" height="391"/>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
