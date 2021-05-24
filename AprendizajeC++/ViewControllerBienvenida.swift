@@ -11,6 +11,8 @@ class ViewControllerBienvenida: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // size - tanto ponerle un size a los labels igual para ipad
 
         // Do any additional setup after loading the view.
     }
