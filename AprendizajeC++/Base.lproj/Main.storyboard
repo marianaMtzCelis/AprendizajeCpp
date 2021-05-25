@@ -84,7 +84,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ke-a8-GZ4">
-                                <rect key="frame" x="309" y="20" width="49" height="30"/>
+                                <rect key="frame" x="309" y="30" width="49" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="49" id="MUQ-bt-aD4"/>
                                 </constraints>
@@ -124,6 +124,7 @@
                             <constraint firstItem="DEo-uW-17J" firstAttribute="trailing" secondItem="osO-rH-9wJ" secondAttribute="trailing" id="2Hl-cV-TKy"/>
                             <constraint firstItem="kmk-jO-Uts" firstAttribute="top" secondItem="MYj-PX-Tx2" secondAttribute="top" constant="38" id="C9q-b5-com"/>
                             <constraint firstItem="DEo-uW-17J" firstAttribute="top" secondItem="osO-rH-9wJ" secondAttribute="bottom" constant="8" symbolic="YES" id="EXS-f6-dVv"/>
+                            <constraint firstItem="1Ke-a8-GZ4" firstAttribute="top" secondItem="MYj-PX-Tx2" secondAttribute="top" constant="30" id="F7M-cf-LPN"/>
                             <constraint firstItem="8eI-6Q-rYj" firstAttribute="top" secondItem="kmk-jO-Uts" secondAttribute="bottom" constant="8" symbolic="YES" id="JKS-zo-gae"/>
                             <constraint firstItem="DEo-uW-17J" firstAttribute="leading" secondItem="osO-rH-9wJ" secondAttribute="leading" id="PGn-dP-H5V"/>
                             <constraint firstItem="MYj-PX-Tx2" firstAttribute="trailing" secondItem="1Ke-a8-GZ4" secondAttribute="trailing" constant="17" id="PcN-bb-c6g"/>
@@ -134,7 +135,6 @@
                             <constraint firstItem="osO-rH-9wJ" firstAttribute="leading" secondItem="8FP-nx-Wg0" secondAttribute="leadingMargin" id="qPg-Mp-hsZ"/>
                             <constraint firstAttribute="bottom" secondItem="osO-rH-9wJ" secondAttribute="bottom" constant="106" id="s8F-eG-ELQ"/>
                             <constraint firstItem="1Ke-a8-GZ4" firstAttribute="leading" secondItem="kmk-jO-Uts" secondAttribute="trailing" constant="8" symbolic="YES" id="wjO-Ez-ZKC"/>
-                            <constraint firstItem="1Ke-a8-GZ4" firstAttribute="top" secondItem="8FP-nx-Wg0" secondAttribute="top" constant="20" symbolic="YES" id="xQE-E3-wmW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xKr-K6-esh"/>
