@@ -37,6 +37,7 @@
 		5D03E73F263A2B47006EECA7 /* DatosFruta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D03E73E263A2B47006EECA7 /* DatosFruta.swift */; };
 		5D374D59264C9CF20081A64A /* DatosCiclo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D374D58264C9CF20081A64A /* DatosCiclo.swift */; };
 		5D374D5E264CA1570081A64A /* listaCiclos.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D374D5D264CA1570081A64A /* listaCiclos.json */; };
+		E3498E38265D7BD400346D7B /* listaCondicionales.json in Resources */ = {isa = PBXBuildFile; fileRef = E3498E37265D7BD400346D7B /* listaCondicionales.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		5D03E73E263A2B47006EECA7 /* DatosFruta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosFruta.swift; sourceTree = "<group>"; };
 		5D374D58264C9CF20081A64A /* DatosCiclo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosCiclo.swift; sourceTree = "<group>"; };
 		5D374D5D264CA1570081A64A /* listaCiclos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listaCiclos.json; sourceTree = "<group>"; };
+		E3498E37265D7BD400346D7B /* listaCondicionales.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listaCondicionales.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				5D0174FA263104160011745A /* DatosGlobo.swift */,
 				5D03E73E263A2B47006EECA7 /* DatosFruta.swift */,
 				5D374D5D264CA1570081A64A /* listaCiclos.json */,
+				E3498E37265D7BD400346D7B /* listaCondicionales.json */,
 				5D374D58264C9CF20081A64A /* DatosCiclo.swift */,
 				280C38772630D6A600F5E4BE /* Globo.swift */,
 				28CCE640262E2BF400EA2B5C /* Info.plist */,
@@ -203,6 +206,7 @@
 				287F1C95264B8AA60061314F /* Explode.sks in Resources */,
 				287F1C8D264B83840061314F /* FScene.sks in Resources */,
 				285CD3362630EA9F00FF5DDE /* listaValores.json in Resources */,
+				E3498E38265D7BD400346D7B /* listaCondicionales.json in Resources */,
 				285CD3392630EAA800FF5DDE /* tiposDeDatos.json in Resources */,
 				28CCE63A262E2BF300EA2B5C /* Main.storyboard in Resources */,
 			);
