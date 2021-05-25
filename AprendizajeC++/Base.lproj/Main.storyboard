@@ -311,8 +311,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxv-9p-r1U">
+                                <rect key="frame" x="322" y="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Fin"/>
+                                <connections>
+                                    <segue destination="aLl-Ej-j7f" kind="show" identifier="ciclosFinSegue" id="zC6-Iq-W3S"/>
+                                </connections>
+                            </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XY3-JV-V5W">
-                                <rect key="frame" x="1" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uWN-J5-xlJ">
@@ -353,14 +361,6 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="JcK-6w-uZd"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="lhd-7c-zUw"/>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxv-9p-r1U">
-                                <rect key="frame" x="322" y="20" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Fin"/>
-                                <connections>
-                                    <segue destination="aLl-Ej-j7f" kind="show" identifier="ciclosFinSegue" id="zC6-Iq-W3S"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zKJ-m4-ufA"/>
                         <color key="backgroundColor" red="0.58164483310000004" green="0.4763759971" blue="0.74120402340000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -387,7 +387,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bc9-p0-hEG">
-                                <rect key="frame" x="247" y="243" width="30" height="30"/>
+                                <rect key="frame" x="311" y="82" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Fin">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -410,6 +410,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="escogerOpcion1:" destination="fct-3z-qm8" eventType="touchUpInside" id="xba-yf-36F"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNe-MB-dww">
                                 <rect key="frame" x="48" y="518" width="121" height="66"/>
@@ -418,6 +421,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="escogerOpcion3:" destination="fct-3z-qm8" eventType="touchUpInside" id="MRM-bB-A9w"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7y-yh-ubR">
                                 <rect key="frame" x="206" y="423" width="121" height="66"/>
@@ -426,6 +432,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="escogerOpcion2:" destination="fct-3z-qm8" eventType="touchUpInside" id="2JC-b8-vfq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0e-Sf-a1d">
                                 <rect key="frame" x="206" y="518" width="121" height="66"/>
@@ -434,16 +443,35 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="escogerOpcion4:" destination="fct-3z-qm8" eventType="touchUpInside" id="AkZ-Ir-21D"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ahb-6U-3ez">
-                                <rect key="frame" x="48" y="157" width="279" height="202"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vru-r8-8lj">
+                                <rect key="frame" x="48" y="152" width="279" height="207"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ahb-6U-3ez">
+                                        <rect key="frame" x="0.0" y="0.0" width="279" height="207"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="MPN-t3-Jbd"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="gtK-Pf-5qD"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7M2-VF-6TT"/>
                         <color key="backgroundColor" red="0.084321506320000003" green="0.54212832450000004" blue="0.83925014730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="kg5-5w-hbN"/>
+                    <connections>
+                        <outlet property="imagenPregunta" destination="ahb-6U-3ez" id="kt3-11-n6m"/>
+                        <outlet property="opcion1" destination="Ann-5q-4Oc" id="Mh3-Dz-Shd"/>
+                        <outlet property="opcion2" destination="d7y-yh-ubR" id="ayV-DQ-jpe"/>
+                        <outlet property="opcion3" destination="jNe-MB-dww" id="CYA-Xp-CyW"/>
+                        <outlet property="opcion4" destination="Y0e-Sf-a1d" id="7M4-L5-wWI"/>
+                        <outlet property="scrollView" destination="Vru-r8-8lj" id="Uws-33-oTU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fDP-dM-SqF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -565,6 +593,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zZv-o3-hrT"/>
+                    <connections>
+                        <outlet property="labelpts" destination="bvG-Nm-UvU" id="uns-rq-GI3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FvY-Vo-a2D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
