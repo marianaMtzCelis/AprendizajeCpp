@@ -76,6 +76,7 @@ class ViewControllerTiposDeDatos: UIViewController {
     
     @objc fileprivate func createBalloons() {
         var i = 1
+        let xOffset = view.frame.width / 5
         let globosRandom = [DatosGlobo](listaDatosGlobo.shuffled()[0..<5])
         globosRandom.forEach { (balloonData) in
             let balloonImage = UIImage(named: balloonData.nombre_imagen)
@@ -84,7 +85,7 @@ class ViewControllerTiposDeDatos: UIViewController {
             balloonImageView.frame = CGRect(x: i, y: Int(view.frame.height), width: 100, height: 150)
             balloonImageView.contentMode = .scaleAspectFit
             view.addSubview(balloonImageView)
-            i += 72
+            i += Int(xOffset)
             animateBalloon(balloonImageView: balloonImageView)
         }
     }
