@@ -38,5 +38,9 @@ class ViewControllerFinPalabrasReservadas: UIViewController {
         lbPuntos.text = String(puntos)
         
     }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
 
 }

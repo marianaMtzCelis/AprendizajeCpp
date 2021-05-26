@@ -59,6 +59,10 @@ class ViewControllerCondicionales: UIViewController {
         opcion4.setTitle(preguntaActual.respuestas[3], for: .normal)
     }
     
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
     // MARK: - Escoger respuestas
     @IBAction func escogerOpcion1(_ sender: UIButton) {
         if sender.titleLabel?.text == preguntaActual.correcta {

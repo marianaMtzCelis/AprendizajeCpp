@@ -142,6 +142,10 @@ class ViewControllerTiposDeDatos: UIViewController {
             performSegue(withIdentifier: "globosFinSegue", sender: nil)
         }
     }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
 
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

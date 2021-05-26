@@ -46,16 +46,31 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ko-Sw-Gaz">
+                                <rect key="frame" x="301" y="617" width="58" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="1iZ-l1-DdA"/>
+                                    <constraint firstAttribute="height" constant="30" id="z0s-cT-lHe"/>
+                                </constraints>
+                                <state key="normal" title="Créditos">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fg5-Ul-VAP" kind="presentation" id="jqD-hQ-Yhk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.068996302780000004" green="0.13895529509999999" blue="0.2353050411" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jHR-vp-X5g" secondAttribute="trailing" constant="111" id="8in-dK-wh6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7ko-Sw-Gaz" secondAttribute="trailing" constant="16" id="KJ7-3c-mLU"/>
                             <constraint firstItem="jHR-vp-X5g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="Kqg-y7-4Js"/>
                             <constraint firstItem="in3-2h-rYJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vdp-Fx-fVC"/>
                             <constraint firstItem="N2h-ma-9iL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="WHS-26-NpK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jHR-vp-X5g" secondAttribute="bottom" constant="70" id="fpa-Ps-cha"/>
                             <constraint firstItem="N2h-ma-9iL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="iMi-A2-m7l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7ko-Sw-Gaz" secondAttribute="bottom" constant="20" id="nuh-qv-jhv"/>
                             <constraint firstAttribute="trailing" secondItem="in3-2h-rYJ" secondAttribute="trailing" constant="-29" id="rJ7-Ev-qXr"/>
                             <constraint firstItem="in3-2h-rYJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-29" id="uM5-br-xfg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N2h-ma-9iL" secondAttribute="trailing" constant="53" id="yhW-ty-BLZ"/>
@@ -65,6 +80,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-47.200000000000003" y="249.62518740629687"/>
+        </scene>
+        <!--View Controller Creditos-->
+        <scene sceneID="HYF-hy-Us7">
+            <objects>
+                <viewController id="fg5-Ul-VAP" customClass="ViewControllerCreditos" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l50-hW-l45">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NfX-PF-Z4a">
+                                <rect key="frame" x="16" y="20" width="343" height="582"/>
+                                <color key="backgroundColor" red="0.042945019899999999" green="0.32086646559999998" blue="0.51766949890000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="L0l-Js-fme">
+                                <rect key="frame" x="32" y="141" width="310" height="446"/>
+                                <mutableString key="text">Aprendizaje C++ ha sido desarrollado por estudiantes del Tecnológico de Monterrey durante el semestre Febrero Junio 2021, como parte del curso Desarrollo de Aplicaciones para Dispositivos Móviles y asesorados por la maestra Yolanda Martínez Treviño.
+
+Desarrolladores:
+Mariano Shaar A00825287
+Ernesto Adame A00825923
+Diego Gómez Cota A00824758
+Mariana Martínez-Celis A01194953
+
+Uso de Imágenes:
+Canva
+Jared Forsyth
+
+Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su distribución y uso con fines de lucro.
+</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creditos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MbG-Sa-mdh">
+                                <rect key="frame" x="97" y="58" width="181" height="59"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wxd-Xo-a18"/>
+                        <color key="backgroundColor" red="0.046660028399999998" green="0.13871055839999999" blue="0.2431489825" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="L0l-Js-fme" firstAttribute="leading" secondItem="Wxd-Xo-a18" secondAttribute="leading" constant="32" id="1Kt-IH-vMS"/>
+                            <constraint firstItem="NfX-PF-Z4a" firstAttribute="leading" secondItem="Wxd-Xo-a18" secondAttribute="leading" constant="16" id="7Kp-MN-iz9"/>
+                            <constraint firstItem="MbG-Sa-mdh" firstAttribute="top" secondItem="Wxd-Xo-a18" secondAttribute="top" constant="58" id="9Pn-xg-Ad1"/>
+                            <constraint firstItem="Wxd-Xo-a18" firstAttribute="trailing" secondItem="NfX-PF-Z4a" secondAttribute="trailing" constant="16" id="Niq-Tl-nu3"/>
+                            <constraint firstItem="Wxd-Xo-a18" firstAttribute="bottom" secondItem="NfX-PF-Z4a" secondAttribute="bottom" constant="45" id="WfX-hQ-3w6"/>
+                            <constraint firstItem="Wxd-Xo-a18" firstAttribute="trailing" secondItem="L0l-Js-fme" secondAttribute="trailing" constant="33" id="Xkl-zm-vAe"/>
+                            <constraint firstItem="MbG-Sa-mdh" firstAttribute="leading" secondItem="Wxd-Xo-a18" secondAttribute="leading" constant="97" id="bJ0-de-SlH"/>
+                            <constraint firstItem="Wxd-Xo-a18" firstAttribute="trailing" secondItem="MbG-Sa-mdh" secondAttribute="trailing" constant="97" id="cZS-34-Py7"/>
+                            <constraint firstItem="L0l-Js-fme" firstAttribute="top" secondItem="MbG-Sa-mdh" secondAttribute="bottom" constant="24" id="kiO-ye-IbT"/>
+                            <constraint firstItem="MbG-Sa-mdh" firstAttribute="centerX" secondItem="l50-hW-l45" secondAttribute="centerX" id="p6N-In-9rb"/>
+                            <constraint firstItem="Wxd-Xo-a18" firstAttribute="bottom" secondItem="L0l-Js-fme" secondAttribute="bottom" constant="60" id="qb5-F9-8Hx"/>
+                            <constraint firstItem="NfX-PF-Z4a" firstAttribute="top" secondItem="Wxd-Xo-a18" secondAttribute="top" constant="20" id="sfx-1O-hwQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bqZ-vl-3wJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47.200000000000003" y="1083.5082458770617"/>
         </scene>
         <!--View Controller Tipos De Datos-->
         <scene sceneID="JON-gK-KiC">
