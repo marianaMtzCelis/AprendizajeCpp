@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -434,7 +434,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ann-5q-4Oc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Ann-5q-4Oc">
                                 <rect key="frame" x="18" y="363" width="162" height="108"/>
                                 <color key="backgroundColor" red="0.98039215686274506" green="0.49803921568627452" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button">
@@ -444,7 +444,7 @@
                                     <action selector="escogerOpcion1:" destination="fct-3z-qm8" eventType="touchUpInside" id="xba-yf-36F"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNe-MB-dww">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jNe-MB-dww">
                                 <rect key="frame" x="18" y="496" width="162" height="108"/>
                                 <color key="backgroundColor" red="1" green="0.90367937909999996" blue="0.95988355739999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button">
@@ -454,7 +454,7 @@
                                     <action selector="escogerOpcion3:" destination="fct-3z-qm8" eventType="touchUpInside" id="MRM-bB-A9w"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7y-yh-ubR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="d7y-yh-ubR">
                                 <rect key="frame" x="197" y="363" width="162" height="108"/>
                                 <color key="backgroundColor" red="0.011764705882352941" green="0.6588235294117647" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button">
@@ -483,7 +483,7 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="MPN-t3-Jbd"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="gtK-Pf-5qD"/>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0e-Sf-a1d">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Y0e-Sf-a1d">
                                 <rect key="frame" x="197" y="496" width="162" height="108"/>
                                 <color key="backgroundColor" red="0.94117647058823528" green="0.76470588235294112" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button">
