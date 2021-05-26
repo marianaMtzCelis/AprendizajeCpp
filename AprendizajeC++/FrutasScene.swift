@@ -179,10 +179,6 @@ class FrutasScene: SKScene {
         
     }
     
-    func missFruit() {
-        
-    }
-    
     func bombExplode() {
         
         for case let fruit as Fruta in children {
@@ -212,7 +208,6 @@ class FrutasScene: SKScene {
         
         guardaDatosInterfaz()
         
-        // segue a fin de juego
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "doaSegue"), object: nil)
         
     }
