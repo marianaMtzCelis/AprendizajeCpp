@@ -59,6 +59,7 @@ class ViewControllerCiclos: UIViewController, UITextFieldDelegate {
     func registrarseParaNotificacionesDeTeclado() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(sender:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(sender:)), name: UIResponder.keyboardWillHideNotification , object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(sender:)), name: UIResponder.keyboardDidHideNotification , object: nil)
     }
     
     @objc func keyboardWillShow(sender: NSNotification) {
