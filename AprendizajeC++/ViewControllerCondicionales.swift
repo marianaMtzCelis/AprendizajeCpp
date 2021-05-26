@@ -14,6 +14,7 @@ class ViewControllerCondicionales: UIViewController {
     var intentos : Int!
     var preguntaActual : DatosCondicionales!
     
+    @IBOutlet weak var lbInstrucciones: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imagenPregunta: UIImageView!
     @IBOutlet weak var opcion1: UIButton!

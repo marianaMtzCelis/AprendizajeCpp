@@ -10,7 +10,10 @@ import UIKit
 class ViewControllerFinCondicionales: UIViewController {
     
     var pts = 0
+    @IBOutlet weak var lbFinDeJuego: UILabel!
     @IBOutlet weak var labelpts: UILabel!
+    @IBOutlet weak var btJugar: UIButton!
+    @IBOutlet weak var btMenu: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
