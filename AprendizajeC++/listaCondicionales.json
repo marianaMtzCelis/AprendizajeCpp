@@ -1,53 +1,152 @@
 [
     {
-        "nombre_imagen" : "ciclo1",
+        "nombre_imagen" : "kahoot1",
         "respuestas" : [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Condicion A",
+            "Condicion B",
+            "Condicion A\nCondicion B",
+            "Nada"
         ],
-        "correcta" : "A"
+        "correcta" : "Condicion A\nCondicion B"
     },
     {
-        "nombre_imagen" : "ciclo2",
+        "nombre_imagen" : "kahoot2",
         "respuestas" : [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Hola mundo",
+            "Adios mundo",
+            "Hola mundo\nAdios mundo",
+            "Nada"
         ],
-        "correcta" : "B"
+        "correcta" : "Nada"
     },
     {
-        "nombre_imagen" : "ciclo3",
+        "nombre_imagen" : "kahoot3",
         "respuestas" : [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Uno",
+            "Dos",
+            "Tres",
+            "Cuatro"
         ],
-        "correcta" : "C"
+        "correcta" : "Tres"
     },
     {
-        "nombre_imagen" : "ciclo4",
+        "nombre_imagen" : "kahoot4",
         "respuestas" : [
-            "A",
-            "B",
-            "C",
-            "D"
+            "10",
+            "12",
+            "15",
+            "17"
         ],
-        "correcta" : "D"
+        "correcta" : "15"
     },
     {
-        "nombre_imagen" : "ciclo5",
+        "nombre_imagen" : "kahoot5",
+        "respuestas" : [
+            "-2",
+            "-7",
+            "12",
+            "5"
+        ],
+        "correcta" : "-2"
+    },
+    {
+        "nombre_imagen" : "kahoot6",
+        "respuestas" : [
+            "Amarillo",
+            "Azul",
+            "Azul\nVerde",
+            "Azul\nNaranja"
+        ],
+        "correcta" : "Azul\nVerde"
+    },
+    {
+        "nombre_imagen" : "kahoot7",
+        "respuestas" : [
+            "30",
+            "31",
+            "45",
+            "44"
+        ],
+        "correcta" : "30"
+    },
+    {
+        "nombre_imagen" : "kahoot8",
+        "respuestas" : [
+            "6",
+            "7",
+            "14",
+            "11"
+        ],
+        "correcta" : "6"
+    },
+    {
+        "nombre_imagen" : "kahoot9",
+        "respuestas" : [
+            "Int",
+            "String",
+            "Bool",
+            "Nada"
+        ],
+        "correcta" : "Int"
+    },
+    {
+        "nombre_imagen" : "kahoot10",
+        "respuestas" : [
+            "7",
+            "12\n7",
+            "12\n-1",
+            "-1"
+        ],
+        "correcta" : "7"
+    },
+    {
+        "nombre_imagen" : "kahoot11",
+        "respuestas" : [
+            "9 15 21",
+            "10 5 21",
+            "9 15 20",
+            "10 5 20"
+        ],
+        "correcta" : "10 5 20"
+    },
+    {
+        "nombre_imagen" : "kahoot12",
         "respuestas" : [
             "A",
             "B",
             "C",
-            "D"
+            "Nada"
         ],
-        "correcta" : "A"
+        "correcta" : "Nada"
     },
+    {
+        "nombre_imagen" : "kahoot13",
+        "respuestas" : [
+            "6",
+            "9",
+            "15",
+            "Nada"
+        ],
+        "correcta" : "9"
+    },
+    {
+        "nombre_imagen" : "kahoot14",
+        "respuestas" : [
+            "X\nY",
+            "Y\nZ",
+            "Y",
+            "X"
+        ],
+        "correcta" : "Y"
+    },
+    {
+        "nombre_imagen" : "kahoot15",
+        "respuestas" : [
+            "2",
+            "-4",
+            "-16",
+            "-9"
+        ],
+        "correcta" : "2"
+    }
 ]
-
