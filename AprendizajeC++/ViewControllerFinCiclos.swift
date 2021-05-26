@@ -45,6 +45,9 @@ class ViewControllerFinCiclos: UIViewController {
     }
     
     
+    @IBAction func jugarDeNuevo(_ sender: UIButton) {
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
+    }
     @IBAction func volverAlMenu(_ sender: Any) {
         if let first = presentingViewController,
             let second = first.presentingViewController{

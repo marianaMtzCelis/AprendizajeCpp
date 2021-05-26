@@ -16,11 +16,17 @@ class ViewControllerPalabrasReservadas: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if let frutasScene = SKScene(fileNamed: "FrutasScene") {
+            frutasScene.scaleMode = .aspectFill
             skView.presentScene(frutasScene)
         }
     }
     
     override func viewDidLoad() {
+        skView.leadingAnchor.constraint(equalTo: skView.leadingAnchor).isActive = true
+        skView.trailingAnchor.constraint(equalTo: skView.trailingAnchor).isActive = true
+        skView.topAnchor.constraint(equalTo: skView.topAnchor).isActive = true
+        skView.bottomAnchor.constraint(equalTo: skView.bottomAnchor).isActive = true
+        
         super.viewDidLoad()
         
         NotificationCenter.default.addObserver(self, selector: #selector(ViewControllerPalabrasReservadas.doaSegue), name: NSNotification.Name(rawValue: "doaSegue"), object: nil)

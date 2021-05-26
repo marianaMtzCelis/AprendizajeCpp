@@ -15,13 +15,15 @@ enum GamePhase {
 }
 
 class FrutasScene: SKScene {
-    
+
     var gamePhase = GamePhase.Ready
     var puntos = 0
     var vidas = 3
     
     var lbPuntos = SKLabelNode()
     var lbVidas = SKLabelNode()
+    var labelPuntos = SKLabelNode()
+    var labelVidas = SKLabelNode()
     var label1 = SKLabelNode()
     var label2 = SKLabelNode()
     var label3 = SKLabelNode()
@@ -32,10 +34,48 @@ class FrutasScene: SKScene {
     
     override func didMove(to view: SKView) {
         
+        size = CGSize(width: 1242, height: 2208)
+        
         let app = UIApplication.shared
         NotificationCenter.default.addObserver(self, selector: #selector(guardaDatosInterfaz), name: UIApplication.didEnterBackgroundNotification, object: app)
+    
+        print(UIApplication.shared.keyWindow?.safeAreaLayoutGuide.layoutFrame.height)
+        print(UIScreen.main.bounds.height)
         
         lbPuntos = childNode(withName: "lbPuntos") as! SKLabelNode
+        lbVidas = childNode(withName: "lbVidas") as! SKLabelNode
+        labelPuntos = childNode(withName: "labelPuntos") as! SKLabelNode
+        labelVidas = childNode(withName: "labelVidas") as! SKLabelNode
+        label1 = childNode(withName: "lb1") as! SKLabelNode
+        label2 = childNode(withName: "lb2") as! SKLabelNode
+        label3 = childNode(withName: "lb3") as! SKLabelNode
+        
+        if ((UIApplication.shared.keyWindow?.safeAreaLayoutGuide.layoutFrame.height)! < 728) {
+            lbPuntos.position = CGPoint(x: 140, y: UIScreen.main.bounds.height - 68)
+            labelPuntos.position = CGPoint(x: 50, y: UIScreen.main.bounds.height - 68)
+            lbVidas.position = CGPoint(x: 140, y: UIScreen.main.bounds.height - 98)
+            labelVidas.position = CGPoint(x: 50, y: UIScreen.main.bounds.height - 98)
+            label1.position = CGPoint(x: UIScreen.main.bounds.width/2, y:UIScreen.main.bounds.height - 200)
+            label2.position = CGPoint(x: UIScreen.main.bounds.width/2, y:UIScreen.main.bounds.height - 230)
+            label3.position = CGPoint(x: UIScreen.main.bounds.width/2, y:UIScreen.main.bounds.height - 260)
+        } else if (UIScreen.main.bounds.height > 1000) {
+            lbPuntos.position = CGPoint(x: 150, y: UIScreen.main.bounds.height - 80)
+            labelPuntos.position = CGPoint(x: 70, y: UIScreen.main.bounds.height - 80)
+            lbVidas.position = CGPoint(x: 150, y: UIScreen.main.bounds.height - 100)
+            labelVidas.position = CGPoint(x: 70, y: UIScreen.main.bounds.height - 100)
+            label1.position = CGPoint(x: UIScreen.main.bounds.width/2, y:UIScreen.main.bounds.height - 200)
+            label2.position = CGPoint(x: UIScreen.main.bounds.width/2, y:UIScreen.main.bounds.height - 230)
+            label3.position = CGPoint(x: UIScreen.main.bounds.width/2, y:UIScreen.main.bounds.height - 260)
+        } else {
+            lbPuntos.position = CGPoint(x: 140, y: UIScreen.main.bounds.height - 150)
+            labelPuntos.position = CGPoint(x: 50, y: UIScreen.main.bounds.height - 150)
+            lbVidas.position = CGPoint(x: 140, y: UIScreen.main.bounds.height - 170)
+            labelVidas.position = CGPoint(x: 50, y: UIScreen.main.bounds.height - 170)
+            label1.position = CGPoint(x: UIScreen.main.bounds.width/2, y:UIScreen.main.bounds.height - 300)
+            label2.position = CGPoint(x: UIScreen.main.bounds.width/2, y:UIScreen.main.bounds.height - 330)
+            label3.position = CGPoint(x: UIScreen.main.bounds.width/2, y:UIScreen.main.bounds.height - 360)
+        }
+        
         lbPuntos.text = "\(puntos)"
         lbVidas = childNode(withName: "lbVidas") as! SKLabelNode
         lbVidas.text = "\(vidas)"
@@ -112,15 +152,13 @@ class FrutasScene: SKScene {
     
     func createFruits() {
         
-        print("fruits")
-        
         let numberOfFruits = 1 + Int(arc4random_uniform(UInt32(4)))
         
         for _ in 0..<numberOfFruits {
             
             let fruit = Fruta()
             
-            fruit.position.x = randomCGFloat(5, 300)
+            fruit.position.x = randomCGFloat(0, size.width)
             fruit.position.y = -100
             addChild(fruit)
             fruit.zPosition = 1
