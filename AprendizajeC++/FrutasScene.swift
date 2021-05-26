@@ -15,13 +15,15 @@ enum GamePhase {
 }
 
 class FrutasScene: SKScene {
-    
+
     var gamePhase = GamePhase.Ready
     var puntos = 0
     var vidas = 3
     
     var lbPuntos = SKLabelNode()
     var lbVidas = SKLabelNode()
+    var labelPuntos = SKLabelNode()
+    var labelVidas = SKLabelNode()
     var label1 = SKLabelNode()
     var label2 = SKLabelNode()
     var label3 = SKLabelNode()
@@ -31,15 +33,51 @@ class FrutasScene: SKScene {
     var explodeOverlay = SKShapeNode()
     
     override func didMove(to view: SKView) {
+        
         size = CGSize(width: 1242, height: 2208)
         
         let app = UIApplication.shared
         NotificationCenter.default.addObserver(self, selector: #selector(guardaDatosInterfaz), name: UIApplication.didEnterBackgroundNotification, object: app)
         
+        
+        print(UIApplication.shared.keyWindow?.safeAreaLayoutGuide.layoutFrame.height)
+        print(UIScreen.main.bounds.height)
+        
         // AJUSTAR TAMAÑOS SEGUN EL DEVICE
         lbPuntos = childNode(withName: "lbPuntos") as! SKLabelNode
-        print(self.view?.frame.height)
-        lbPuntos.position = CGPoint(x:(self.view?.frame.width)!/3.0, y:(self.view?.frame.height)!/0.85)
+        lbVidas = childNode(withName: "lbVidas") as! SKLabelNode
+        labelPuntos = childNode(withName: "labelPuntos") as! SKLabelNode
+        labelVidas = childNode(withName: "labelVidas") as! SKLabelNode
+        
+        if ((UIApplication.shared.keyWindow?.safeAreaLayoutGuide.layoutFrame.height)! < 760) {
+            lbPuntos.position = CGPoint(x: 140, y: UIScreen.main.bounds.height - 68)
+            labelPuntos.position = CGPoint(x: 50, y: UIScreen.main.bounds.height - 68)
+            lbVidas.position = CGPoint(x: 140, y: UIScreen.main.bounds.height - 98)
+            labelVidas.position = CGPoint(x: 50, y: UIScreen.main.bounds.height - 98)
+        } else if (UIScreen.main.bounds.height > 1000) {
+            lbPuntos.position = CGPoint(x: 150, y: UIScreen.main.bounds.height - 80)
+            labelPuntos.position = CGPoint(x: 70, y: UIScreen.main.bounds.height - 80)
+            lbVidas.position = CGPoint(x: 150, y: UIScreen.main.bounds.height - 100)
+            labelVidas.position = CGPoint(x: 70, y: UIScreen.main.bounds.height - 100)
+        } else {
+            lbPuntos.position = CGPoint(x: 140, y: UIScreen.main.bounds.height - 150)
+            labelPuntos.position = CGPoint(x: 50, y: UIScreen.main.bounds.height - 150)
+            lbVidas.position = CGPoint(x: 140, y: UIScreen.main.bounds.height - 170)
+            labelVidas.position = CGPoint(x: 50, y: UIScreen.main.bounds.height - 170)
+        }
+        
+        
+        /*
+        //SOS
+        let rangeForOrientation = SKRange(constantValue:CGFloat(M_2_PI*7))
+        let orientConstraint = SKConstraint.orient(to: lbPuntos, offset: rangeForOrientation)
+        let rangeToSprite = SKRange(lowerLimit: 100, upperLimit: 120)
+        var distanceConstraint = SKConstraint.distance(rangeToSprite, to:lbVidas)
+        
+        lbPuntos.constraints = [orientConstraint, distanceConstraint]
+        */
+        
+        //lbPuntos.position = CGPoint(x:(self.view?.frame.width)!/3.0, y:(self.view?.frame.height)!/0.85)
         lbPuntos.text = "\(puntos)"
         lbVidas = childNode(withName: "lbVidas") as! SKLabelNode
         lbVidas.text = "\(vidas)"
