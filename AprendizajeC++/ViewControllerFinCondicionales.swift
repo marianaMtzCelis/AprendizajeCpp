@@ -8,11 +8,14 @@
 import UIKit
 
 class ViewControllerFinCondicionales: UIViewController {
-
+    
+    var pts = 0
+    @IBOutlet weak var labelpts: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        labelpts.text = String(pts)
     }
     
     

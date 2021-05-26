@@ -57,28 +57,17 @@ class ViewControllerCiclos: UIViewController, UITextFieldDelegate {
     
     // MARK: - Manipular el teclado
     func registrarseParaNotificacionesDeTeclado() {
-        NotificationCenter.default.addObserver(self, selector: #selector(tecladoSeMostro(aNotification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(tecladoSeOculto(aNotification:)), name: UIResponder.keyboardWillHideNotification , object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(sender:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(sender:)), name: UIResponder.keyboardWillHideNotification , object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(sender:)), name: UIResponder.keyboardDidHideNotification , object: nil)
     }
     
-    @IBAction func tecladoSeMostro(aNotification: NSNotification) {
-        let kbSize = (aNotification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as AnyObject).cgRectValue.size
-        
-        let contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: kbSize.height, right: 0.0)
-        scrollViewCompleta.contentInset = contentInset
-        scrollViewCompleta.scrollIndicatorInsets = contentInset
-        
-        scrollViewCompleta.setContentOffset(CGPoint(x: 0.0, y: botonEvaluar.frame.origin.y - kbSize.height), animated: true)
-        
+    @objc func keyboardWillShow(sender: NSNotification) {
+         self.view.frame.origin.y = -300 // Move view 150 points upward
     }
-    
-    @IBAction func tecladoSeOculto(aNotification: NSNotification) {
-        let contentInset = UIEdgeInsets.zero
-        scrollViewCompleta.contentInset = contentInset
-        scrollViewCompleta.scrollIndicatorInsets = contentInset
-        
-        scrollViewCompleta.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
 
+    @objc func keyboardWillHide(sender: NSNotification) {
+         self.view.frame.origin.y = 0 // Move view to original position
     }
     
     @IBAction func quitaTeclado() {

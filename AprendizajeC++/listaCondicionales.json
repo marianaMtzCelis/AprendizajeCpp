@@ -1,0 +1,53 @@
+[
+    {
+        "nombre_imagen" : "ciclo1",
+        "respuestas" : [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "correcta" : "A"
+    },
+    {
+        "nombre_imagen" : "ciclo2",
+        "respuestas" : [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "correcta" : "B"
+    },
+    {
+        "nombre_imagen" : "ciclo3",
+        "respuestas" : [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "correcta" : "C"
+    },
+    {
+        "nombre_imagen" : "ciclo4",
+        "respuestas" : [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "correcta" : "D"
+    },
+    {
+        "nombre_imagen" : "ciclo5",
+        "respuestas" : [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "correcta" : "A"
+    },
+]
+
