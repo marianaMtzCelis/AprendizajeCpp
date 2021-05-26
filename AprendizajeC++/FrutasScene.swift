@@ -38,12 +38,10 @@ class FrutasScene: SKScene {
         
         let app = UIApplication.shared
         NotificationCenter.default.addObserver(self, selector: #selector(guardaDatosInterfaz), name: UIApplication.didEnterBackgroundNotification, object: app)
-        
-        
+    
         print(UIApplication.shared.keyWindow?.safeAreaLayoutGuide.layoutFrame.height)
         print(UIScreen.main.bounds.height)
         
-        // AJUSTAR TAMAÑOS SEGUN EL DEVICE
         lbPuntos = childNode(withName: "lbPuntos") as! SKLabelNode
         lbVidas = childNode(withName: "lbVidas") as! SKLabelNode
         labelPuntos = childNode(withName: "labelPuntos") as! SKLabelNode
@@ -52,7 +50,7 @@ class FrutasScene: SKScene {
         label2 = childNode(withName: "lb2") as! SKLabelNode
         label3 = childNode(withName: "lb3") as! SKLabelNode
         
-        if ((UIApplication.shared.keyWindow?.safeAreaLayoutGuide.layoutFrame.height)! < 760) {
+        if ((UIApplication.shared.keyWindow?.safeAreaLayoutGuide.layoutFrame.height)! < 728) {
             lbPuntos.position = CGPoint(x: 140, y: UIScreen.main.bounds.height - 68)
             labelPuntos.position = CGPoint(x: 50, y: UIScreen.main.bounds.height - 68)
             lbVidas.position = CGPoint(x: 140, y: UIScreen.main.bounds.height - 98)
