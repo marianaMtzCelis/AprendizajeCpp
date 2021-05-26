@@ -9,6 +9,7 @@ import UIKit
 
 class ViewControllerTiposDeDatos: UIViewController {
 
+    @IBOutlet weak var labelInstruccion: UILabel!
     var listaDatosGlobo : [DatosGlobo]!
     var listaTiposDeDatos : [String]!
     var timerJuego : Timer?
@@ -22,7 +23,7 @@ class ViewControllerTiposDeDatos: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Load balloon data (list of DatosGlobo)
         let rutaDatosGlobo = Bundle.main.path(forResource: "listaValores", ofType: "json")!
 
@@ -44,6 +45,22 @@ class ViewControllerTiposDeDatos: UIViewController {
         }
         
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTapBalloon)))
+        
+        let defaults = UserDefaults.standard
+        if let dispositivo = defaults.value(forKey: "dispositivo") as? String {
+            if dispositivo == "ipad" {
+                labelPuntos.font = labelPuntos.font.withSize(25)
+                labelVidas.font = labelVidas.font.withSize(25)
+                tituloJuego.font = tituloJuego.font.withSize(40)
+                labelInstruccion.font = labelInstruccion.font.withSize(30)
+            }
+            else if dispositivo == "ipod" {
+                labelPuntos.font = labelPuntos.font.withSize(12)
+                labelVidas.font = labelVidas.font.withSize(12)
+                tituloJuego.font = tituloJuego.font.withSize(30)
+                labelInstruccion.font = labelInstruccion.font.withSize(20)
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,6 +70,7 @@ class ViewControllerTiposDeDatos: UIViewController {
         vidas = 3
         labelPuntos.text = "Puntos: " + String(puntos)
         labelVidas.text = "Vidas: " + String(vidas)
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -9,6 +9,9 @@ import UIKit
 
 class ViewControllerCiclos: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var btnEvaluar: UIButton!
+    @IBOutlet weak var lblInstrucciones: UILabel!
+    @IBOutlet weak var btnFin: UIButton!
     var listaDatosCiclo : [DatosCiclo]!
     var listaTextBoxIncognitas : [UITextField]!
     var iIncognitas : Int!
@@ -44,6 +47,23 @@ class ViewControllerCiclos: UIViewController, UITextFieldDelegate {
         scrollView.minimumZoomScale = 1
         scrollView.maximumZoomScale = 4
         scrollView.delegate = self
+        
+        let defaults = UserDefaults.standard
+        if let dispositivo = defaults.value(forKey: "dispositivo") as? String {
+            if dispositivo == "ipad" {
+                lblInstrucciones.font = lblInstrucciones.font.withSize(45)
+                btnFin.titleLabel?.font = btnFin.titleLabel?.font.withSize(30)
+                btnEvaluar.titleLabel?.font = btnEvaluar.titleLabel?.font.withSize(30)
+                
+                
+            }
+            else if dispositivo == "ipod" {
+                lblInstrucciones.font = lblInstrucciones.font.withSize(12)
+                btnFin.titleLabel?.font = btnFin.titleLabel?.font.withSize(10)
+                btnEvaluar.titleLabel?.font = btnEvaluar.titleLabel?.font.withSize(10)
+            }
+        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -111,6 +131,19 @@ class ViewControllerCiclos: UIViewController, UITextFieldDelegate {
         for i in 0..<iIncognitas {
             // Create label
             let label = UILabel()
+            //
+            let defaults = UserDefaults.standard
+            if let dispositivo = defaults.value(forKey: "dispositivo") as? String {
+                if dispositivo == "ipad" {
+                    label.font = label.font.withSize(30)
+                    
+                    
+                }
+                else if dispositivo == "ipod" {
+                    label.font = label.font.withSize(15)
+                }
+            }
+            //
             label.text = cCiclo.incognitas[i]
             // Create text field
             let textField = UITextField()
