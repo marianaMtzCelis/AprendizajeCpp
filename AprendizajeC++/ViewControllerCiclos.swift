@@ -74,6 +74,10 @@ class ViewControllerCiclos: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
     }
     
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
 //    func textFieldDidBeginEditing(_ textField: UITextField) {
 //        activeField = textField
 //    }

@@ -27,5 +27,9 @@ class ViewControllerBienvenida: UIViewController {
             
         }
     }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
 
 }
