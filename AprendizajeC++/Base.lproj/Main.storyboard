@@ -358,7 +358,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Par-Bj-eWM">
                                         <rect key="frame" x="370" y="30" width="30" height="30"/>
                                         <connections>
-                                            <segue destination="aLl-Ej-j7f" kind="show" id="Uvr-By-Jt0"/>
+                                            <segue destination="aLl-Ej-j7f" kind="show" identifier="ciclosFinSegue" id="Uvr-By-Jt0"/>
                                         </connections>
                                     </button>
                                 </subviews>
