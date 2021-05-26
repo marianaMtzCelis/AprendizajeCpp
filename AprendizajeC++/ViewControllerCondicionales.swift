@@ -104,7 +104,7 @@ class ViewControllerCondicionales: UIViewController {
         
         if !correcta {
             titulo = "Oh no"
-            mensaje = "La respuesta correcta es: " + preguntaActual.correcta
+            mensaje = "La respuesta correcta es:\n" + preguntaActual.correcta
         } else {
             puntos += 20
         }

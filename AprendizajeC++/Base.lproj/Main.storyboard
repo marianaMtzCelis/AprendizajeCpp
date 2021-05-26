@@ -173,7 +173,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="of7-mh-7er">
-                                <rect key="frame" x="86" y="182" width="186" height="24"/>
+                                <rect key="frame" x="86" y="182" width="203" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="67" id="CrD-Op-zbm"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="67" id="Ejv-ID-xKz"/>
@@ -220,7 +220,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wVS-KM-l3k">
-                                <rect key="frame" x="197.66666666666663" y="227" width="157.33333333333337" height="195"/>
+                                <rect key="frame" x="197.66666666666663" y="227" width="174.33333333333337" height="195"/>
                                 <color key="backgroundColor" red="0.26216655970000002" green="0.46990597249999999" blue="0.1410816312" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
@@ -238,13 +238,13 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globoFinal" translatesAutoresizingMaskIntoConstraints="NO" id="DNd-2U-XqN">
-                                <rect key="frame" x="102" y="489" width="170" height="417"/>
+                                <rect key="frame" x="85" y="489" width="204" height="417"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globoFinal" translatesAutoresizingMaskIntoConstraints="NO" id="yIJ-DZ-9xW">
-                                <rect key="frame" x="280" y="469" width="97" height="383"/>
+                                <rect key="frame" x="297" y="469" width="97" height="383"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globoFinal" translatesAutoresizingMaskIntoConstraints="NO" id="tOr-rr-ymv">
-                                <rect key="frame" x="35" y="469" width="60" height="383"/>
+                                <rect key="frame" x="35" y="469" width="43" height="383"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Aek-Iy-RQJ"/>
@@ -434,7 +434,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ann-5q-4Oc">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Ann-5q-4Oc">
                                 <rect key="frame" x="48" y="423" width="121" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98039215686274506" green="0.49803921568627452" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
@@ -445,7 +445,7 @@
                                     <action selector="escogerOpcion1:" destination="fct-3z-qm8" eventType="touchUpInside" id="xba-yf-36F"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNe-MB-dww">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jNe-MB-dww">
                                 <rect key="frame" x="48" y="518" width="121" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.90367937909999996" blue="0.95988355739999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -456,7 +456,7 @@
                                     <action selector="escogerOpcion3:" destination="fct-3z-qm8" eventType="touchUpInside" id="MRM-bB-A9w"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7y-yh-ubR">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="d7y-yh-ubR">
                                 <rect key="frame" x="206" y="423" width="121" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.011764705882352941" green="0.6588235294117647" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
@@ -467,7 +467,7 @@
                                     <action selector="escogerOpcion2:" destination="fct-3z-qm8" eventType="touchUpInside" id="2JC-b8-vfq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0e-Sf-a1d">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Y0e-Sf-a1d">
                                 <rect key="frame" x="206" y="518" width="121" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94117647058823528" green="0.76470588235294112" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
