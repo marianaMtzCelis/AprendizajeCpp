@@ -59,5 +59,9 @@ class ViewControllerPalabrasReservadas: UIViewController {
            self.view.removeFromSuperview()
            self.view = nil
        }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
 
 }

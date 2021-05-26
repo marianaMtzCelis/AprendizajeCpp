@@ -31,5 +31,9 @@ class ViewControllerFinCondicionales: UIViewController {
         self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
     
 }
