@@ -20,7 +20,6 @@ class ViewControllerCiclos: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var ImagenCiclo: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var botonEvaluar: UIButton!
-    @IBOutlet weak var scrollViewCompleta: UIScrollView!
     
     
     override func viewDidLoad() {
