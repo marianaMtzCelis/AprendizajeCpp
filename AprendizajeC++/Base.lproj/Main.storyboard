@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,18 +13,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewControllerBienvenida" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carnivalGirl" translatesAutoresizingMaskIntoConstraints="NO" id="in3-2h-rYJ">
-                                <rect key="frame" x="-29" y="57" width="433" height="1080"/>
+                                <rect key="frame" x="-29" y="-206.5" width="433" height="1080"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1080" id="5DS-z8-M21"/>
                                     <constraint firstAttribute="width" constant="433" id="rQS-yX-odd"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHR-vp-X5g">
-                                <rect key="frame" x="110" y="1035" width="613" height="69"/>
+                                <rect key="frame" x="110" y="528" width="154" height="69"/>
                                 <color key="backgroundColor" red="0.2230831385" green="0.42646059390000002" blue="0.13325324650000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="69" id="OjY-C6-VzO"/>
@@ -38,7 +38,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aprendizaje C++" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2h-ma-9iL">
-                                <rect key="frame" x="52" y="47" width="729" height="125"/>
+                                <rect key="frame" x="52" y="47" width="270" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="0Ln-bS-nmU"/>
                                 </constraints>
@@ -47,7 +47,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ko-Sw-Gaz">
-                                <rect key="frame" x="760" y="1124" width="58" height="30"/>
+                                <rect key="frame" x="301" y="617" width="58" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="58" id="1iZ-l1-DdA"/>
                                     <constraint firstAttribute="height" constant="30" id="z0s-cT-lHe"/>
@@ -86,15 +86,15 @@
             <objects>
                 <viewController id="fg5-Ul-VAP" customClass="ViewControllerCreditos" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l50-hW-l45">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NfX-PF-Z4a">
-                                <rect key="frame" x="16" y="20" width="672" height="930.5"/>
+                                <rect key="frame" x="16" y="20" width="343" height="582"/>
                                 <color key="backgroundColor" red="0.042945019899999999" green="0.32086646559999998" blue="0.51766949890000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="L0l-Js-fme">
-                                <rect key="frame" x="32" y="141" width="639" height="794.5"/>
+                                <rect key="frame" x="32" y="141" width="310" height="446"/>
                                 <string key="text">Aprendizaje C++ ha sido desarrollado por estudiantes del Tecnológico de Monterrey durante el semestre Febrero Junio 2021, como parte del curso Desarrollo de Aplicaciones para Dispositivos Móviles y asesorados por la maestra Yolanda Martínez Treviño.
 
 Desarrolladores:
@@ -114,7 +114,7 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creditos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MbG-Sa-mdh">
-                                <rect key="frame" x="97" y="58" width="510" height="59"/>
+                                <rect key="frame" x="97" y="58" width="181" height="59"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -147,7 +147,7 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="1Cd-os-3XH" customClass="ViewControllerTiposDeDatos" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8FP-nx-Wg0">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="tipo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eI-6Q-rYj">
@@ -160,7 +160,7 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ke-a8-GZ4">
-                                <rect key="frame" x="768" y="30" width="49" height="30"/>
+                                <rect key="frame" x="309" y="30" width="49" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="49" id="MUQ-bt-aD4"/>
                                 </constraints>
@@ -173,7 +173,7 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Revienta todos los globos que correspondan a un valor de tipo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmk-jO-Uts">
-                                <rect key="frame" x="85" y="38" width="675" height="147"/>
+                                <rect key="frame" x="85" y="38" width="216" height="147"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="147" id="gq8-Cz-e1F"/>
                                 </constraints>
@@ -182,13 +182,13 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntos: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osO-rH-9wJ">
-                                <rect key="frame" x="20" y="1067" width="599" height="21"/>
+                                <rect key="frame" x="16" y="540" width="144" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vidas: 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEo-uW-17J">
-                                <rect key="frame" x="20" y="1096" width="599" height="21"/>
+                                <rect key="frame" x="16" y="569" width="144" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -229,7 +229,7 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="uiJ-LB-4lf" customClass="ViewControllerFinTiposDeDatos" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Bs-0d-1bc">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kGg-ag-blX">
@@ -384,94 +384,84 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="mLS-Hc-gVQ" customClass="ViewControllerCiclos" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iYr-jF-BWO">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XY3-JV-V5W">
-                                <rect key="frame" x="10" y="30" width="814" height="1144"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Par-Bj-eWM">
+                                <rect key="frame" x="313" y="20" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aHA-UX-N4U"/>
+                                    <constraint firstAttribute="width" constant="30" id="xAZ-6z-erG"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="aLl-Ej-j7f" kind="show" identifier="ciclosFinSegue" id="Uvr-By-Jt0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yb-SW-aIc">
+                                <rect key="frame" x="60" y="599" width="255" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MQl-ZC-PuC"/>
+                                </constraints>
+                                <state key="normal" title="Evaluar">
+                                    <color key="titleColor" systemColor="systemGray6Color"/>
+                                </state>
+                                <connections>
+                                    <action selector="evaluar:" destination="mLS-Hc-gVQ" eventType="touchUpInside" id="vqr-KE-BNm"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rFI-Fw-N6Z">
+                                <rect key="frame" x="10" y="187" width="355" height="238"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uWN-J5-xlJ">
-                                        <rect key="frame" x="100" y="942" width="614" height="127"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="127" id="xcv-08-crO"/>
-                                        </constraints>
-                                    </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yb-SW-aIc">
-                                        <rect key="frame" x="50" y="1094" width="714" height="30"/>
-                                        <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Evaluar">
-                                            <color key="titleColor" systemColor="systemGray6Color"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="evaluar:" destination="mLS-Hc-gVQ" eventType="touchUpInside" id="vqr-KE-BNm"/>
-                                        </connections>
-                                    </button>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rFI-Fw-N6Z">
-                                        <rect key="frame" x="0.0" y="134" width="814" height="800"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="peM-Cf-yS2">
-                                                <rect key="frame" x="10" y="0.0" width="794" height="800"/>
-                                            </imageView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="375" id="7B7-fk-tXs"/>
-                                            <constraint firstItem="peM-Cf-yS2" firstAttribute="leading" secondItem="rFI-Fw-N6Z" secondAttribute="leading" constant="10" id="JpA-Oq-JDs"/>
-                                            <constraint firstItem="peM-Cf-yS2" firstAttribute="centerX" secondItem="rFI-Fw-N6Z" secondAttribute="centerX" id="MVa-0v-cVz"/>
-                                            <constraint firstItem="peM-Cf-yS2" firstAttribute="bottom" secondItem="gyg-eD-sVv" secondAttribute="bottom" id="WPN-Bp-DlY"/>
-                                            <constraint firstAttribute="bottom" secondItem="peM-Cf-yS2" secondAttribute="bottom" constant="5" id="fIa-7y-V5V"/>
-                                            <constraint firstAttribute="trailing" secondItem="peM-Cf-yS2" secondAttribute="trailing" constant="10" id="gNU-4x-l68"/>
-                                            <constraint firstItem="peM-Cf-yS2" firstAttribute="top" secondItem="gyg-eD-sVv" secondAttribute="top" id="jcb-vM-ydA"/>
-                                        </constraints>
-                                        <viewLayoutGuide key="contentLayoutGuide" id="GsS-qV-02h"/>
-                                        <viewLayoutGuide key="frameLayoutGuide" id="gyg-eD-sVv"/>
-                                    </scrollView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escribe en cada espacio la respuesta correspondiente" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orK-V4-wwa">
-                                        <rect key="frame" x="100" y="20" width="614" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Par-Bj-eWM">
-                                        <rect key="frame" x="776" y="30" width="30" height="30"/>
-                                        <connections>
-                                            <segue destination="aLl-Ej-j7f" kind="show" identifier="ciclosFinSegue" id="Uvr-By-Jt0"/>
-                                        </connections>
-                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="peM-Cf-yS2">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="238"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="uWN-J5-xlJ" firstAttribute="centerX" secondItem="rFI-Fw-N6Z" secondAttribute="centerX" id="2N5-Yt-RUG"/>
-                                    <constraint firstItem="orK-V4-wwa" firstAttribute="top" secondItem="XY3-JV-V5W" secondAttribute="top" constant="20" id="4G2-GE-8W7"/>
-                                    <constraint firstItem="uWN-J5-xlJ" firstAttribute="top" secondItem="rFI-Fw-N6Z" secondAttribute="bottom" constant="8" id="BYQ-kK-BtM"/>
-                                    <constraint firstItem="lhd-7c-zUw" firstAttribute="trailing" secondItem="orK-V4-wwa" secondAttribute="trailing" constant="100" id="CsV-qt-Qa5"/>
-                                    <constraint firstItem="rFI-Fw-N6Z" firstAttribute="leading" secondItem="XY3-JV-V5W" secondAttribute="leading" id="DLe-on-DhV"/>
-                                    <constraint firstItem="Par-Bj-eWM" firstAttribute="top" secondItem="lhd-7c-zUw" secondAttribute="top" constant="30" id="HZw-gu-Q9B"/>
-                                    <constraint firstItem="orK-V4-wwa" firstAttribute="top" secondItem="lhd-7c-zUw" secondAttribute="top" constant="20" id="IeO-Bx-QK2"/>
-                                    <constraint firstItem="rFI-Fw-N6Z" firstAttribute="top" secondItem="lhd-7c-zUw" secondAttribute="top" constant="134" id="L5Z-7I-jeH"/>
-                                    <constraint firstItem="JcK-6w-uZd" firstAttribute="trailing" secondItem="Par-Bj-eWM" secondAttribute="trailing" constant="30" id="ObV-4l-EQ4"/>
-                                    <constraint firstItem="lhd-7c-zUw" firstAttribute="trailing" secondItem="3Yb-SW-aIc" secondAttribute="trailing" constant="50" id="Oix-YJ-bxA"/>
-                                    <constraint firstItem="uWN-J5-xlJ" firstAttribute="top" secondItem="rFI-Fw-N6Z" secondAttribute="bottom" constant="8" id="Omy-eV-JZy"/>
-                                    <constraint firstItem="3Yb-SW-aIc" firstAttribute="top" secondItem="uWN-J5-xlJ" secondAttribute="bottom" constant="25" id="PjT-fp-yhV"/>
-                                    <constraint firstAttribute="bottom" secondItem="uWN-J5-xlJ" secondAttribute="bottom" constant="87" id="Q81-LY-XLA"/>
-                                    <constraint firstItem="lhd-7c-zUw" firstAttribute="trailing" secondItem="uWN-J5-xlJ" secondAttribute="trailing" constant="100" id="UFp-yA-0Y8"/>
-                                    <constraint firstItem="uWN-J5-xlJ" firstAttribute="leading" secondItem="lhd-7c-zUw" secondAttribute="leading" constant="100" id="WAG-Fr-HFG"/>
-                                    <constraint firstItem="uWN-J5-xlJ" firstAttribute="centerX" secondItem="orK-V4-wwa" secondAttribute="centerX" id="dJB-8u-zI6"/>
-                                    <constraint firstItem="3Yb-SW-aIc" firstAttribute="leading" secondItem="lhd-7c-zUw" secondAttribute="leading" constant="50" id="fPv-uE-7Ga"/>
-                                    <constraint firstItem="lhd-7c-zUw" firstAttribute="bottom" secondItem="3Yb-SW-aIc" secondAttribute="bottom" constant="20" id="lRB-FR-xqL"/>
-                                    <constraint firstItem="orK-V4-wwa" firstAttribute="leading" secondItem="lhd-7c-zUw" secondAttribute="leading" constant="100" id="mZQ-dq-Rh3"/>
-                                    <constraint firstAttribute="trailing" secondItem="uWN-J5-xlJ" secondAttribute="trailing" constant="122" id="pnb-NE-oIG"/>
+                                    <constraint firstAttribute="bottom" secondItem="peM-Cf-yS2" secondAttribute="bottom" id="9r0-gA-KXH"/>
+                                    <constraint firstItem="peM-Cf-yS2" firstAttribute="centerX" secondItem="rFI-Fw-N6Z" secondAttribute="centerX" id="MVa-0v-cVz"/>
+                                    <constraint firstAttribute="trailing" secondItem="peM-Cf-yS2" secondAttribute="trailing" id="V2w-Xc-dvs"/>
+                                    <constraint firstItem="peM-Cf-yS2" firstAttribute="bottom" secondItem="gyg-eD-sVv" secondAttribute="bottom" id="WPN-Bp-DlY"/>
+                                    <constraint firstItem="peM-Cf-yS2" firstAttribute="top" secondItem="rFI-Fw-N6Z" secondAttribute="top" id="Zem-wS-sQW"/>
+                                    <constraint firstItem="peM-Cf-yS2" firstAttribute="top" secondItem="gyg-eD-sVv" secondAttribute="top" id="jcb-vM-ydA"/>
+                                    <constraint firstItem="peM-Cf-yS2" firstAttribute="leading" secondItem="rFI-Fw-N6Z" secondAttribute="leading" id="uop-rH-PI9"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="JcK-6w-uZd"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="lhd-7c-zUw"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="GsS-qV-02h"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="gyg-eD-sVv"/>
                             </scrollView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uWN-J5-xlJ">
+                                <rect key="frame" x="110" y="445" width="155" height="127"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="127" id="xcv-08-crO"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escribe en cada espacio la respuesta correspondiente" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orK-V4-wwa">
+                                <rect key="frame" x="110" y="85" width="155" height="81.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zKJ-m4-ufA"/>
                         <color key="backgroundColor" red="0.58164483310000004" green="0.4763759971" blue="0.74120402340000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="XY3-JV-V5W" firstAttribute="leading" secondItem="zKJ-m4-ufA" secondAttribute="leading" constant="10" id="9Rn-2P-RI4"/>
-                            <constraint firstItem="zKJ-m4-ufA" firstAttribute="trailing" secondItem="XY3-JV-V5W" secondAttribute="trailing" constant="10" id="CnX-8l-rnn"/>
-                            <constraint firstItem="XY3-JV-V5W" firstAttribute="bottom" secondItem="zKJ-m4-ufA" secondAttribute="bottom" id="KT6-sY-sVw"/>
-                            <constraint firstItem="XY3-JV-V5W" firstAttribute="centerX" secondItem="iYr-jF-BWO" secondAttribute="centerX" id="gl9-VD-Nfb"/>
-                            <constraint firstItem="XY3-JV-V5W" firstAttribute="top" secondItem="zKJ-m4-ufA" secondAttribute="top" constant="30" id="tLM-OQ-HLI"/>
+                            <constraint firstItem="zKJ-m4-ufA" firstAttribute="trailing" secondItem="uWN-J5-xlJ" secondAttribute="trailing" constant="110" id="0iP-pr-kGj"/>
+                            <constraint firstItem="zKJ-m4-ufA" firstAttribute="bottom" secondItem="3Yb-SW-aIc" secondAttribute="bottom" constant="38" id="2I3-Pc-RHk"/>
+                            <constraint firstItem="zKJ-m4-ufA" firstAttribute="trailing" secondItem="Par-Bj-eWM" secondAttribute="trailing" constant="32" id="4zR-RS-hTJ"/>
+                            <constraint firstItem="orK-V4-wwa" firstAttribute="top" secondItem="zKJ-m4-ufA" secondAttribute="top" constant="85" id="6Yo-31-ySA"/>
+                            <constraint firstItem="rFI-Fw-N6Z" firstAttribute="top" secondItem="zKJ-m4-ufA" secondAttribute="top" constant="187" id="EXf-vu-GDW"/>
+                            <constraint firstItem="orK-V4-wwa" firstAttribute="leading" secondItem="zKJ-m4-ufA" secondAttribute="leading" constant="110" id="Lew-A2-oGZ"/>
+                            <constraint firstItem="3Yb-SW-aIc" firstAttribute="top" secondItem="uWN-J5-xlJ" secondAttribute="bottom" constant="27" id="NaB-hC-GWo"/>
+                            <constraint firstItem="3Yb-SW-aIc" firstAttribute="leading" secondItem="zKJ-m4-ufA" secondAttribute="leading" constant="60" id="Q01-Oj-DDX"/>
+                            <constraint firstItem="rFI-Fw-N6Z" firstAttribute="leading" secondItem="zKJ-m4-ufA" secondAttribute="leading" constant="10" id="QOv-f5-fz5"/>
+                            <constraint firstItem="uWN-J5-xlJ" firstAttribute="top" secondItem="rFI-Fw-N6Z" secondAttribute="bottom" constant="20" id="Sdt-Go-8HO"/>
+                            <constraint firstItem="zKJ-m4-ufA" firstAttribute="trailing" secondItem="orK-V4-wwa" secondAttribute="trailing" constant="110" id="THM-Z7-fnM"/>
+                            <constraint firstItem="uWN-J5-xlJ" firstAttribute="leading" secondItem="zKJ-m4-ufA" secondAttribute="leading" constant="110" id="V6F-6a-nss"/>
+                            <constraint firstItem="zKJ-m4-ufA" firstAttribute="trailing" secondItem="3Yb-SW-aIc" secondAttribute="trailing" constant="60" id="Ya8-DK-POb"/>
+                            <constraint firstItem="Par-Bj-eWM" firstAttribute="top" secondItem="zKJ-m4-ufA" secondAttribute="top" constant="20" id="aUb-pP-zD8"/>
+                            <constraint firstItem="zKJ-m4-ufA" firstAttribute="trailing" secondItem="rFI-Fw-N6Z" secondAttribute="trailing" constant="10" id="byh-Zy-zTe"/>
+                            <constraint firstItem="3Yb-SW-aIc" firstAttribute="top" secondItem="uWN-J5-xlJ" secondAttribute="bottom" constant="27" id="cJl-6U-hkB"/>
+                            <constraint firstItem="uWN-J5-xlJ" firstAttribute="top" secondItem="rFI-Fw-N6Z" secondAttribute="bottom" constant="20" id="koQ-zf-EYK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bLz-lb-igD"/>
@@ -480,7 +470,6 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
                         <outlet property="VStackPreguntas" destination="uWN-J5-xlJ" id="eeh-34-GTS"/>
                         <outlet property="botonEvaluar" destination="3Yb-SW-aIc" id="khD-ny-QpS"/>
                         <outlet property="scrollView" destination="rFI-Fw-N6Z" id="QlQ-nf-Pv3"/>
-                        <outlet property="scrollViewCompleta" destination="XY3-JV-V5W" id="K0O-Qc-23l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1gi-lo-foj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -492,11 +481,11 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="fct-3z-qm8" customClass="ViewControllerCondicionales" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zwF-IZ-UP1">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bc9-p0-hEG">
-                                <rect key="frame" x="784" y="30" width="30" height="30"/>
+                                <rect key="frame" x="325" y="30" width="30" height="30"/>
                                 <state key="normal">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -505,13 +494,13 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Qué se imprimiría en consola?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQ5-jK-oOh">
-                                <rect key="frame" x="30" y="51" width="774" height="21"/>
+                                <rect key="frame" x="30" y="51" width="315" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Ann-5q-4Oc">
-                                <rect key="frame" x="18" y="890" width="391.5" height="98"/>
+                                <rect key="frame" x="18" y="363" width="162" height="108"/>
                                 <color key="backgroundColor" red="0.98039215686274506" green="0.49803921568627452" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" systemColor="labelColor"/>
@@ -521,7 +510,7 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jNe-MB-dww">
-                                <rect key="frame" x="18" y="1013" width="391.5" height="98"/>
+                                <rect key="frame" x="18" y="496" width="162" height="108"/>
                                 <color key="backgroundColor" red="1" green="0.90367937909999996" blue="0.95988355739999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" systemColor="labelColor"/>
@@ -531,7 +520,7 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="d7y-yh-ubR">
-                                <rect key="frame" x="426.5" y="890" width="391.5" height="98"/>
+                                <rect key="frame" x="197" y="363" width="162" height="108"/>
                                 <color key="backgroundColor" red="0.011764705882352941" green="0.6588235294117647" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" systemColor="labelColor"/>
@@ -541,10 +530,10 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vru-r8-8lj">
-                                <rect key="frame" x="10" y="108" width="814" height="731"/>
+                                <rect key="frame" x="10" y="108" width="355" height="204"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ahb-6U-3ez">
-                                        <rect key="frame" x="0.0" y="0.0" width="814" height="731"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="204"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -560,7 +549,7 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
                                 <viewLayoutGuide key="frameLayoutGuide" id="gtK-Pf-5qD"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Y0e-Sf-a1d">
-                                <rect key="frame" x="426.5" y="1013" width="391.5" height="98"/>
+                                <rect key="frame" x="197" y="496" width="162" height="108"/>
                                 <color key="backgroundColor" red="0.94117647058823528" green="0.76470588235294112" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" systemColor="labelColor"/>
@@ -625,15 +614,15 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Q9P-4o-uWs" customClass="ViewControllerFinCondicionales" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OZv-cM-F5b">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nnW-V3-0Cz">
-                                <rect key="frame" x="35" y="42" width="337" height="1089"/>
+                                <rect key="frame" x="35" y="42" width="304" height="582"/>
                                 <color key="backgroundColor" red="0.10653520380000001" green="0.2317052782" blue="0.38433077929999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fin del Juego" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvP-LY-TPH">
-                                <rect key="frame" x="86" y="76" width="235" height="42"/>
+                                <rect key="frame" x="86" y="76" width="202" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="iHj-HZ-AFh"/>
                                 </constraints>
@@ -642,7 +631,7 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ema-a4-vLB">
-                                <rect key="frame" x="56" y="190" width="138" height="745"/>
+                                <rect key="frame" x="56" y="190" width="121.5" height="238"/>
                                 <color key="backgroundColor" red="0.084321506320000003" green="0.54212832450000004" blue="0.83925014730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
@@ -660,7 +649,7 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="esL-PS-UTq">
-                                <rect key="frame" x="214" y="190" width="138" height="745"/>
+                                <rect key="frame" x="197.5" y="190" width="121.5" height="238"/>
                                 <color key="backgroundColor" red="0.084321506320000003" green="0.54212832450000004" blue="0.83925014730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
@@ -688,7 +677,7 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvG-Nm-UvU">
-                                <rect key="frame" x="175" y="133" width="146" height="24"/>
+                                <rect key="frame" x="175" y="133" width="113" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="Okj-kh-9KM"/>
                                     <constraint firstAttribute="width" constant="113" id="zpF-RR-9Ya"/>
@@ -698,7 +687,7 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="expFinal" translatesAutoresizingMaskIntoConstraints="NO" id="4ym-TO-lDy">
-                                <rect key="frame" x="142" y="891" width="271" height="295"/>
+                                <rect key="frame" x="109" y="384" width="271" height="295"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="295" id="RkH-uB-Biv"/>
                                     <constraint firstAttribute="width" constant="271" id="fHN-2a-4Et"/>
@@ -749,7 +738,7 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="9O8-oI-3mZ" customClass="ViewControllerPalabrasReservadas" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t5A-SI-Czf">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4b-c6-Hen">
@@ -768,7 +757,7 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
                                 <nil key="highlightedColor"/>
                             </label>
                             <skView contentMode="scaleToFill" sceneName="FScene.sks" translatesAutoresizingMaskIntoConstraints="NO" id="SWz-sB-XLq">
-                                <rect key="frame" x="0.0" y="0.0" width="834" height="1174"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </skView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="05q-uQ-4tO"/>
@@ -794,15 +783,15 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="yqm-NB-HUF" customClass="ViewControllerFinPalabrasReservadas" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e7o-nC-caO">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zrL-UN-GHK">
-                                <rect key="frame" x="35" y="42" width="337" height="1089"/>
+                                <rect key="frame" x="35" y="42" width="304" height="582"/>
                                 <color key="backgroundColor" red="0.89584392310000005" green="0.70988494160000004" blue="0.38816094400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bOH-uW-wMF">
-                                <rect key="frame" x="56" y="190" width="138" height="745"/>
+                                <rect key="frame" x="56" y="190" width="121.5" height="238"/>
                                 <color key="backgroundColor" red="0.92294460540000001" green="0.64368408919999998" blue="0.23515629769999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
@@ -820,7 +809,7 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pBQ-fb-bKH">
-                                <rect key="frame" x="214" y="190" width="138" height="745"/>
+                                <rect key="frame" x="197.5" y="190" width="121.5" height="238"/>
                                 <color key="backgroundColor" red="0.92294460540000001" green="0.64368408919999998" blue="0.23515629769999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
@@ -838,7 +827,7 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fin del Juego" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cet-Ia-2da">
-                                <rect key="frame" x="83" y="74" width="235" height="42"/>
+                                <rect key="frame" x="83" y="74" width="202" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="6ot-Uc-SR3"/>
                                 </constraints>
@@ -857,7 +846,7 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDh-bh-Qm9">
-                                <rect key="frame" x="172" y="131" width="146" height="24"/>
+                                <rect key="frame" x="172" y="131" width="113" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="113" id="TKI-SS-adS"/>
                                     <constraint firstAttribute="height" constant="24" id="gmF-jq-4sQ"/>
@@ -867,7 +856,7 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pinaFinal" translatesAutoresizingMaskIntoConstraints="NO" id="k2d-5m-8Bk">
-                                <rect key="frame" x="162" y="916" width="241" height="246"/>
+                                <rect key="frame" x="129" y="409" width="241" height="246"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="241" id="h1w-Iq-q6n"/>
                                     <constraint firstAttribute="height" constant="246" id="tkQ-E6-hiU"/>
@@ -919,7 +908,7 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="aLl-Ej-j7f" customClass="ViewControllerFinCiclos" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Ct-r4-2SQ">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v5j-RQ-kMI">
@@ -1052,32 +1041,32 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Z6X-nd-iG6" customClass="ViewControllerMenu" customModule="AprendizajeC__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eCI-hH-W0B">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uF0-fY-1d9">
-                                <rect key="frame" x="426" y="42" width="380" height="548"/>
+                                <rect key="frame" x="196.5" y="42" width="150.5" height="294.5"/>
                                 <state key="normal" image="botonCiclos"/>
                                 <connections>
                                     <segue destination="mLS-Hc-gVQ" kind="show" identifier="menuCiclosSegue" id="sDT-Cf-ovd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pip-Zy-LyR">
-                                <rect key="frame" x="29" y="603" width="380" height="548"/>
+                                <rect key="frame" x="29" y="349.5" width="150.5" height="294.5"/>
                                 <state key="normal" image="botonCondicionales"/>
                                 <connections>
                                     <segue destination="fct-3z-qm8" kind="show" identifier="menuCondicionalesSegue" id="z2b-Av-uTU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkQ-sf-ocH">
-                                <rect key="frame" x="29" y="42" width="380" height="548"/>
+                                <rect key="frame" x="29" y="42" width="150.5" height="294.5"/>
                                 <state key="normal" image="botonTipoDeDatos"/>
                                 <connections>
                                     <segue destination="1Cd-os-3XH" kind="show" identifier="menuGlobosSegue" id="reF-H5-3J4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="247" verticalHuggingPriority="247" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYd-zo-T0k">
-                                <rect key="frame" x="429" y="604" width="380" height="548"/>
+                                <rect key="frame" x="199.5" y="350.5" width="150.5" height="294.5"/>
                                 <state key="normal" image="botonPalabrasReservadas"/>
                                 <connections>
                                     <segue destination="9O8-oI-3mZ" kind="show" identifier="menuFrutasSegue" id="QiR-jx-xTh"/>
