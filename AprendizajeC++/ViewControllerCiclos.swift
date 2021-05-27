@@ -63,7 +63,7 @@ class ViewControllerCiclos: UIViewController, UITextFieldDelegate {
     }
     
     @objc func keyboardWillShow(sender: NSNotification) {
-         self.view.frame.origin.y = -300 // Move view 150 points upward
+         self.view.frame.origin.y = -250 // Move view 150 points upward
     }
 
     @objc func keyboardWillHide(sender: NSNotification) {

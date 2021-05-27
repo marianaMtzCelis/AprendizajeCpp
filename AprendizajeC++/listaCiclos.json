@@ -3,11 +3,13 @@
         "nombre_imagen" : "ciclo1",
         "incognitas" : [
             "A",
-            "B"
+            "B",
+            "C"
         ],
         "respuestas" : [
-            "(",
-            ")"
+            "++",
+            "if",
+            "else"
         ]
     },
     {
@@ -18,8 +20,8 @@
             "C"
         ],
         "respuestas" : [
-            ")",
-            "<<",
+            "<",
+            ">",
             "<<"
         ]
     },
@@ -28,12 +30,14 @@
         "incognitas" : [
             "A",
             "B",
-            "C"
+            "C",
+            "D"
         ],
         "respuestas" : [
-            "(",
-            "cout",
-            "cout"
+            "for",
+            "==",
+            "else",
+            "}"
         ]
     },
     {
@@ -45,12 +49,73 @@
         ],
         "respuestas" : [
             "=",
-            "if",
-            "<<"
+            "++",
+            "i"
         ]
     },
     {
         "nombre_imagen" : "ciclo5",
+        "incognitas" : [
+            "A",
+            "B"
+        ],
+        "respuestas" : [
+            "while",
+            "++"
+        ]
+    },
+    {
+        "nombre_imagen" : "ciclo6",
+        "incognitas" : [
+            "A",
+            "B"
+        ],
+        "respuestas" : [
+            "do",
+            "while"
+        ]
+    },
+    {
+        "nombre_imagen" : "ciclo7",
+        "incognitas" : [
+            "A",
+            "B",
+            "C"
+        ],
+        "respuestas" : [
+            "n",
+            "--",
+            "cont"
+        ]
+    },
+    {
+        "nombre_imagen" : "ciclo8",
+        "incognitas" : [
+            "A",
+            "B",
+            "C"
+        ],
+        "respuestas" : [
+            "while",
+            "-",
+            "<<"
+        ]
+    },
+    {
+        "nombre_imagen" : "ciclo9",
+        "incognitas" : [
+            "A",
+            "B",
+            "C"
+        ],
+        "respuestas" : [
+            "for",
+            "++",
+            "--"
+        ]
+    },
+    {
+        "nombre_imagen" : "ciclo10",
         "incognitas" : [
             "A",
             "B",
@@ -58,10 +123,10 @@
             "D"
         ],
         "respuestas" : [
-            "for",
-            "{",
-            "else",
-            "}"
+            "do",
+            "++",
+            "--",
+            ";"
         ]
     }
 ]
