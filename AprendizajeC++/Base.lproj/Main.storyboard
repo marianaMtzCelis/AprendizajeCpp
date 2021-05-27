@@ -449,6 +449,7 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
                             <constraint firstItem="zKJ-m4-ufA" firstAttribute="bottom" secondItem="3Yb-SW-aIc" secondAttribute="bottom" constant="38" id="2I3-Pc-RHk"/>
                             <constraint firstItem="zKJ-m4-ufA" firstAttribute="trailing" secondItem="Par-Bj-eWM" secondAttribute="trailing" constant="32" id="4zR-RS-hTJ"/>
                             <constraint firstItem="orK-V4-wwa" firstAttribute="top" secondItem="zKJ-m4-ufA" secondAttribute="top" constant="85" id="6Yo-31-ySA"/>
+                            <constraint firstItem="rFI-Fw-N6Z" firstAttribute="top" secondItem="zKJ-m4-ufA" secondAttribute="top" constant="187" id="EXf-vu-GDW"/>
                             <constraint firstItem="orK-V4-wwa" firstAttribute="leading" secondItem="zKJ-m4-ufA" secondAttribute="leading" constant="110" id="Lew-A2-oGZ"/>
                             <constraint firstItem="3Yb-SW-aIc" firstAttribute="top" secondItem="uWN-J5-xlJ" secondAttribute="bottom" constant="27" id="NaB-hC-GWo"/>
                             <constraint firstItem="3Yb-SW-aIc" firstAttribute="leading" secondItem="zKJ-m4-ufA" secondAttribute="leading" constant="60" id="Q01-Oj-DDX"/>
@@ -461,7 +462,6 @@ Aprendizaje C++ se distribuye como está de manera gratuita y se prohíbe su dis
                             <constraint firstItem="zKJ-m4-ufA" firstAttribute="trailing" secondItem="rFI-Fw-N6Z" secondAttribute="trailing" constant="10" id="byh-Zy-zTe"/>
                             <constraint firstItem="3Yb-SW-aIc" firstAttribute="top" secondItem="uWN-J5-xlJ" secondAttribute="bottom" constant="27" id="cJl-6U-hkB"/>
                             <constraint firstItem="uWN-J5-xlJ" firstAttribute="top" secondItem="rFI-Fw-N6Z" secondAttribute="bottom" constant="20" id="koQ-zf-EYK"/>
-                            <constraint firstItem="rFI-Fw-N6Z" firstAttribute="top" secondItem="orK-V4-wwa" secondAttribute="bottom" constant="20.5" id="nkC-3b-7R0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bLz-lb-igD"/>
