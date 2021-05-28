@@ -14,7 +14,6 @@ class ViewControllerCiclos: UIViewController, UITextFieldDelegate {
     var iIncognitas : Int!
     var puntos : Int!
     var intentos : Int!
-//    var activeField : UITextField!
     
     @IBOutlet weak var VStackPreguntas: UIStackView!
     @IBOutlet weak var ImagenCiclo: UIImageView!
@@ -62,7 +61,11 @@ class ViewControllerCiclos: UIViewController, UITextFieldDelegate {
     }
     
     @objc func keyboardWillShow(sender: NSNotification) {
-         self.view.frame.origin.y = -250 // Move view 150 points upward
+        if UIScreen.main.bounds.height > 1000 {
+            self.view.frame.origin.y = -250
+        } else {
+            self.view.frame.origin.y = -200
+        }
     }
 
     @objc func keyboardWillHide(sender: NSNotification) {
@@ -107,6 +110,8 @@ class ViewControllerCiclos: UIViewController, UITextFieldDelegate {
             // Create text field
             let textField = UITextField()
             textField.backgroundColor = .white
+            textField.autocapitalizationType = .none
+            textField.autocorrectionType = .no
             listaTextBoxIncognitas.append(textField)
             // Create HStack
             let HStack = UIStackView()
@@ -131,7 +136,7 @@ class ViewControllerCiclos: UIViewController, UITextFieldDelegate {
         
         var incorrectas = [String]()
         for i in 0..<iIncognitas {
-            let answer = listaTextBoxIncognitas[i].text!
+            let answer = listaTextBoxIncognitas[i].text!.trimmingCharacters(in: .whitespacesAndNewlines)
             if (answer.lowercased() != listaDatosCiclo[intentos].respuestas[i]) {
                 incorrectas.append(listaDatosCiclo[intentos].incognitas[i])
             }
