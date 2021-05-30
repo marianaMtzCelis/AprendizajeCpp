@@ -48,7 +48,7 @@ class ViewControllerTiposDeDatos: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         tipoDeDatoPartida = listaTiposDeDatos.randomElement()!
-        tituloJuego.text = tipoDeDatoPartida.uppercased()
+        tituloJuego.text = tipoDeDatoPartida
         puntos = 0
         vidas = 3
         labelPuntos.text = "Puntos: " + String(puntos)
